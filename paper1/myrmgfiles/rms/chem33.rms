@@ -1,0 +1,3010 @@
+Phases:
+- Species:
+  - comment: 'Thermo library: primaryThermoLibrary'
+    name: Ar
+    radicalelectrons: 0
+    smiles: '[Ar]'
+    thermo:
+      polys:
+      - Tmax: 1000.0
+        Tmin: 200.0
+        coefs:
+        - 2.5
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - -745.375
+        - 4.37967
+        type: NASApolynomial
+      - Tmax: 6000.0
+        Tmin: 1000.0
+        coefs:
+        - 2.5
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - -745.375
+        - 4.37967
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo library: primaryThermoLibrary'
+    name: He
+    radicalelectrons: 0
+    smiles: '[He]'
+    thermo:
+      polys:
+      - Tmax: 1000.0
+        Tmin: 200.0
+        coefs:
+        - 2.5
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - -745.375
+        - 0.928724
+        type: NASApolynomial
+      - Tmax: 6000.0
+        Tmin: 1000.0
+        coefs:
+        - 2.5
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - -745.375
+        - 0.928724
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo library: primaryThermoLibrary'
+    name: Ne
+    radicalelectrons: 0
+    smiles: '[Ne]'
+    thermo:
+      polys:
+      - Tmax: 1000.0
+        Tmin: 200.0
+        coefs:
+        - 2.5
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - -745.375
+        - 3.35532
+        type: NASApolynomial
+      - Tmax: 6000.0
+        Tmin: 1000.0
+        coefs:
+        - 2.5
+        - 0.0
+        - 0.0
+        - 0.0
+        - 0.0
+        - -745.375
+        - 3.35532
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo library: primaryThermoLibrary'
+    name: N2
+    radicalelectrons: 0
+    smiles: N#N
+    thermo:
+      polys:
+      - Tmax: 1000.0
+        Tmin: 200.0
+        coefs:
+        - 3.53101
+        - -0.000123661
+        - -5.02999e-07
+        - 2.43531e-09
+        - -1.40881e-12
+        - -1046.98
+        - 2.96747
+        type: NASApolynomial
+      - Tmax: 6000.0
+        Tmin: 1000.0
+        coefs:
+        - 2.95258
+        - 0.0013969
+        - -4.92632e-07
+        - 7.8601e-11
+        - -4.60755e-15
+        - -923.949
+        - 5.87189
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo group additivity estimation: group(Cs-CsCsHH) + group(Cs-CsCsHH)
+      + group(Cs-CsCsHH) + group(Cs-CsCsHH) + group(Cs-CsHHH) + group(Cs-CsHHH)'
+    name: C6H14
+    radicalelectrons: 0
+    smiles: CCCCCC
+    thermo:
+      polys:
+      - Tmax: 1144.9665203552963
+        Tmin: 100.0
+        coefs:
+        - 0.793273064700914
+        - 0.06053385836033698
+        - -1.5968043022768335e-05
+        - -1.1711243756895678e-08
+        - 6.1015458759442695e-12
+        - -22952.286054646356
+        - 24.91854657145248
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 1144.9665203552963
+        coefs:
+        - 11.030784390026522
+        - 0.04319570661787817
+        - -1.739468821952218e-05
+        - 3.1757653169314523e-09
+        - -2.181458178836001e-13
+        - -26504.458086375023
+        - -31.132045400146843
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo group additivity estimation: group(Ct-CtH) + group(Ct-CtH)'
+    name: C2H2
+    radicalelectrons: 0
+    smiles: C#C
+    thermo:
+      polys:
+      - Tmax: 888.6184730551075
+        Tmin: 100.0
+        coefs:
+        - 3.0357582355384936
+        - 0.007712252410805563
+        - 2.5354589476475838e-06
+        - -1.0814071491167004e-08
+        - 5.507929417135423e-12
+        - 25852.643863532023
+        - 4.544574555670317
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 888.6184730551075
+        coefs:
+        - 5.762017736501237
+        - 0.0023716362425575273
+        - -1.4961141209361635e-07
+        - -2.190854534551423e-11
+        - 2.2172093277909332e-15
+        - 25094.460994318597
+        - -9.825931942225457
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo group additivity estimation: group(Cds-CdsHH) + group(Cds-CdsHH)'
+    name: C2H4
+    radicalelectrons: 0
+    smiles: C=C
+    thermo:
+      polys:
+      - Tmax: 940.4496161851814
+        Tmin: 100.0
+        coefs:
+        - 3.9797331699146343
+        - -0.007575460375910438
+        - 5.529681133241064e-05
+        - -6.362146502373131e-08
+        - 2.317640213134218e-11
+        - 5077.4613367544225
+        - 4.046267527800137
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 940.4496161851814
+        coefs:
+        - 5.203029557920174
+        - 0.007824362769503043
+        - -2.1267978581014866e-06
+        - 3.796819037911574e-10
+        - -2.9466348445040835e-14
+        - 3936.2666901853913
+        - -6.624309265494627
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo group additivity estimation: group(Cs-CsHHH) + group(Cs-CsHHH)'
+    name: C2H6
+    radicalelectrons: 0
+    smiles: CC
+    thermo:
+      polys:
+      - Tmax: 954.5110766061034
+        Tmin: 100.0
+        coefs:
+        - 3.780345867348182
+        - -0.0032427624138802427
+        - 5.5238543534416906e-05
+        - -6.385877832662431e-08
+        - 2.286400144369903e-11
+        - -11620.341355397588
+        - 5.210296952824131
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 954.5110766061034
+        coefs:
+        - 4.589795125358309
+        - 0.014150836948789223
+        - -4.759658168923145e-06
+        - 8.603029939748261e-10
+        - -6.217239192618495e-14
+        - -12721.750604172716
+        - -3.6171881378830153
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo group additivity estimation: group(Cs-CsCsHH) + group(Cs-CsHHH)
+      + group(Cs-CsHHH)'
+    name: C3H8
+    radicalelectrons: 0
+    smiles: CCC
+    thermo:
+      polys:
+      - Tmax: 986.5650629079604
+        Tmin: 100.0
+        coefs:
+        - 3.0525949624169186
+        - 0.012509590819705253
+        - 3.7939878584337096e-05
+        - -5.120386712807954e-08
+        - 1.8707212008961118e-11
+        - -14454.178019397297
+        - 10.067142405063965
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 986.5650629079604
+        coefs:
+        - 5.913051514871623
+        - 0.021876445421205915
+        - -8.176718456130962e-06
+        - 1.4985714511095281e-09
+        - -1.0599352902049275e-13
+        - -16038.831573395533
+        - -8.86492584618047
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo group additivity estimation: group(Cs-(Cds-Cds)HHH) + group(Cds-CdsCsH)
+      + group(Cds-CdsHH)'
+    name: C3H6
+    radicalelectrons: 0
+    smiles: C=CC
+    thermo:
+      polys:
+      - Tmax: 988.0146653881709
+        Tmin: 100.0
+        coefs:
+        - 3.3097318868676657
+        - 0.008275389246300379
+        - 3.377002612437261e-05
+        - -4.3928763947483785e-08
+        - 1.587634177663216e-11
+        - 767.477288556782
+        - 9.643636076872149
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 988.0146653881709
+        coefs:
+        - 5.4121988296762895
+        - 0.01728633022356229
+        - -6.513435931390157e-06
+        - 1.2031901369326903e-09
+        - -8.558940640116834e-14
+        - -503.2418355170267
+        - -4.802402988242725
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo library: primaryThermoLibrary'
+    name: CH4
+    radicalelectrons: 0
+    smiles: C
+    thermo:
+      polys:
+      - Tmax: 1084.1078280925676
+        Tmin: 100.0
+        coefs:
+        - 4.205422505722197
+        - -0.005355657283513437
+        - 2.5112608127419945e-05
+        - -2.137663106990105e-08
+        - 5.975378413657663e-12
+        - -10161.94362132341
+        - -0.9213054625863741
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 1084.1078280925676
+        coefs:
+        - 0.9082238617971627
+        - 0.01145415480184063
+        - -4.571777165983782e-06
+        - 8.292007047450558e-10
+        - -5.6632229297379695e-14
+        - -9719.956096907104
+        - 13.993331553065046
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo library: primaryThermoLibrary + radical(CH3)'
+    name: CH3
+    radicalelectrons: 1
+    smiles: '[CH3]'
+    thermo:
+      polys:
+      - Tmax: 1337.6274669455229
+        Tmin: 100.0
+        coefs:
+        - 3.9154676047684123
+        - 0.0018415432808995646
+        - 3.487417439288846e-06
+        - -3.327475906775688e-09
+        - 8.499568267979791e-13
+        - 16285.63937280134
+        - 0.35174150847061997
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 1337.6274669455229
+        coefs:
+        - 3.541457560900611
+        - 0.004767868223213535
+        - -1.8214841942257602e-06
+        - 3.288765726194113e-10
+        - -2.2254558271546705e-14
+        - 16223.95787447099
+        - 1.660349246707525
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo library: primaryThermoLibrary'
+    name: CH2
+    radicalelectrons: 2
+    smiles: '[CH2]'
+    thermo:
+      polys:
+      - Tmax: 1104.6022859265615
+        Tmin: 100.0
+        coefs:
+        - 4.011923874283311
+        - -0.0001549787182268112
+        - 3.2629782871365655e-06
+        - -2.4042183494633977e-09
+        - 5.694968187484258e-13
+        - 45867.68022011255
+        - 0.5332005070572367
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 1104.6022859265615
+        coefs:
+        - 3.149833873422988
+        - 0.0029667425706303876
+        - -9.760558279760789e-07
+        - 1.5411527503871823e-10
+        - -9.503380743117587e-15
+        - 46058.139034387095
+        - 4.778076632962606
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo library: SABIC_aromatics'
+    name: C6H6
+    radicalelectrons: 0
+    smiles: c1ccccc1
+    thermo:
+      polys:
+      - Tmax: 880.42
+        Tmin: 200.0
+        coefs:
+        - -2.34956
+        - 0.0426033
+        - 4.18859e-06
+        - -3.77183e-08
+        - 1.85245e-11
+        - 8835.36
+        - 33.1038
+        type: NASApolynomial
+      - Tmax: 3200.0
+        Tmin: 880.42
+        coefs:
+        - 2.44278
+        - 0.0393145
+        - -2.16999e-05
+        - 5.73056e-09
+        - -5.84085e-13
+        - 7275.11
+        - 6.52533
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo library: primaryThermoLibrary'
+    name: H2
+    radicalelectrons: 0
+    smiles: '[H][H]'
+    thermo:
+      polys:
+      - Tmax: 1959.0868065876384
+        Tmin: 100.0
+        coefs:
+        - 3.4353643973030823
+        - 0.00021270791050002774
+        - -2.786195031148906e-07
+        - 3.4026282066033143e-10
+        - -7.760212376167584e-14
+        - -1031.3598562381972
+        - -3.90841840075486
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 1959.0868065876384
+        coefs:
+        - 2.7881364289459047
+        - 0.0005876791411956651
+        - 1.5899253360248924e-07
+        - -5.5270313463646185e-11
+        - 4.342848237589594e-15
+        - -596.1269218333223
+        - 0.11290694499595078
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo library: primaryThermoLibrary'
+    name: H
+    radicalelectrons: 1
+    smiles: '[H]'
+    thermo:
+      polys:
+      - Tmax: 3598.760373716065
+        Tmin: 100.0
+        coefs:
+        - 2.499999999999468
+        - 3.426880537969376e-15
+        - -5.020015097843241e-18
+        - 2.4131442486178244e-21
+        - -3.5711774724341325e-25
+        - 25474.21776872908
+        - -0.4449728963319056
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 3598.760373716065
+        coefs:
+        - 2.4999999938427417
+        - 6.2855479638390205e-12
+        - -2.38962425596927e-15
+        - 4.008385588481424e-19
+        - -2.5025705223333573e-23
+        - 25474.217773523695
+        - -0.44497285824025173
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo group additivity estimation: group(Cs-CsCsHH) + group(Cs-CsCsHH)
+      + group(Cs-CsHHH) + group(Cs-CsHHH) + radical(RCCJ)'
+    name: '[CH2]CCC'
+    radicalelectrons: 1
+    smiles: '[CH2]CCC'
+    thermo:
+      polys:
+      - Tmax: 1048.106887287934
+        Tmin: 100.0
+        coefs:
+        - 2.3484795568795547
+        - 0.02913242108337096
+        - 9.836416785037186e-06
+        - -2.605060023655804e-08
+        - 1.0115099068419956e-11
+        - 7395.2656115906075
+        - 17.32019437664748
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 1048.106887287934
+        coefs:
+        - 7.215748778371619
+        - 0.027003650947831363
+        - -1.065471174390057e-05
+        - 1.954717849899511e-09
+        - -1.359776558388146e-13
+        - 5471.623939252943
+        - -10.699732062587636
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo group additivity estimation: group(Cs-CsHHH) + group(Cs-CsHHH)
+      + radical(CCJ)'
+    name: C[CH2]
+    radicalelectrons: 1
+    smiles: C[CH2]
+    thermo:
+      polys:
+      - Tmax: 900.2976472786648
+        Tmin: 100.0
+        coefs:
+        - 3.8218908396715716
+        - -0.0034342953651367767
+        - 5.092835936211398e-05
+        - -6.202489967550677e-08
+        - 2.3709083756289546e-11
+        - 13066.010573693955
+        - 7.616239650759989
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 900.2976472786648
+        coefs:
+        - 5.156063477571634
+        - 0.009431481311873512
+        - -1.819611070835375e-06
+        - 2.2123210546796444e-10
+        - -1.4351183871513736e-14
+        - 12064.140914790141
+        - -2.91017390534376
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo group additivity estimation: group(Cs-CsCsHH) + group(Cs-CsHHH)
+      + group(Cs-CsHHH) + radical(RCCJ)'
+    name: '[CH2]CC'
+    radicalelectrons: 1
+    smiles: '[CH2]CC'
+    thermo:
+      polys:
+      - Tmax: 995.4114621651489
+        Tmin: 100.0
+        coefs:
+        - 3.0919133185449117
+        - 0.01321724383380716
+        - 2.7584769602936916e-05
+        - -3.908490108768562e-08
+        - 1.4331337486196888e-11
+        - 10228.41174989934
+        - 12.405786204598655
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 995.4114621651489
+        coefs:
+        - 5.694308592424628
+        - 0.019603342236727803
+        - -7.420497648408988e-06
+        - 1.3588298361816545e-09
+        - -9.562151182698614e-14
+        - 8875.84875842275
+        - -4.328892157464489
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo group additivity estimation: group(Cs-CsCsHH) + group(Cs-CsCsHH)
+      + group(Cs-CsCsHH) + group(Cs-CsCsHH) + group(Cs-CsHHH) + group(Cs-CsHHH) +
+      radical(RCCJC)'
+    name: C[CH]CCCC
+    radicalelectrons: 1
+    smiles: C[CH]CCCC
+    thermo:
+      polys:
+      - Tmax: 1919.3700126333486
+        Tmin: 100.0
+        coefs:
+        - 1.1003947915282362
+        - 0.05911573372295049
+        - -2.8309558371635624e-05
+        - 5.965977221673881e-09
+        - -4.292699053546617e-13
+        - 418.9338581223657
+        - 27.271036457271485
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 1919.3700126333486
+        coefs:
+        - 15.992964812700933
+        - 0.03377092243579472
+        - -1.2950416078246218e-05
+        - 2.1761393715059205e-09
+        - -1.3687061216457238e-13
+        - -6346.3165932507345
+        - -57.01796869232207
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo group additivity estimation: group(Cs-CsCsHH) + group(Cs-CsCsHH)
+      + group(Cs-CsCsHH) + group(Cs-CsCsHH) + group(Cs-CsHHH) + group(Cs-CsHHH) +
+      radical(RCCJCC)'
+    name: CC[CH]CCC
+    radicalelectrons: 1
+    smiles: CC[CH]CCC
+    thermo:
+      polys:
+      - Tmax: 2003.8016926711512
+        Tmin: 100.0
+        coefs:
+        - 1.3368649495379183
+        - 0.057324425915236246
+        - -2.58737798488084e-05
+        - 4.742810005795835e-09
+        - -2.3901264916675076e-13
+        - 408.83901378395956
+        - 26.244174486991813
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 2003.8016926711512
+        coefs:
+        - 17.074295279494006
+        - 0.032927541179581264
+        - -1.2864540282754678e-05
+        - 2.1625378270163334e-09
+        - -1.3516524895197698e-13
+        - -7307.092330642704
+        - -64.13387186646716
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo group additivity estimation: group(Cs-CsCsHH) + group(Cs-(Cds-Cds)CsHH)
+      + group(Cs-CsHHH) + group(Cds-CdsCsH) + group(Cds-CdsHH)'
+    name: C=CCCC
+    radicalelectrons: 0
+    smiles: C=CCCC
+    thermo:
+      polys:
+      - Tmax: 1027.6163936626756
+        Tmin: 100.0
+        coefs:
+        - 1.9014851689856396
+        - 0.036253761503766455
+        - 1.2912762703527291e-05
+        - -3.557609583126169e-08
+        - 1.4306512290690946e-11
+        - -4763.096372005389
+        - 19.856381522882476
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 1027.6163936626756
+        coefs:
+        - 9.28071657399862
+        - 0.030404101454247247
+        - -1.1937504098881892e-05
+        - 2.2066256992849567e-09
+        - -1.5506597723696072e-13
+        - -7487.44331721884
+        - -21.821598748754873
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo group additivity estimation: group(Cs-CsCsHH) + group(Cs-CsCsHH)
+      + group(Cs-CsHHH) + group(Cs-CsHHH) + group(CsJ2_singlet-CsH)'
+    name: C[C]CCC
+    radicalelectrons: 0
+    smiles: C[C]CCC
+    thermo:
+      polys:
+      - Tmax: 2216.652791494481
+        Tmin: 100.0
+        coefs:
+        - 1.7483138704684411
+        - 0.0494323619407935
+        - -2.5768345897362627e-05
+        - 6.323718948367204e-09
+        - -6.205628226863236e-13
+        - 31420.72587707963
+        - 29.225205368358118
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 2216.652791494481
+        coefs:
+        - 13.827695512454541
+        - 0.02763457409451225
+        - -1.101768743029798e-05
+        - 1.8873477652452863e-09
+        - -1.2021085580623304e-13
+        - 26065.633448098488
+        - -38.665845668262186
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo group additivity estimation: group(Cs-(Cds-Cds)CsHH) + group(Cs-CsHHH)
+      + group(Cs-(Cds-Cds)HHH) + group(Cds-CdsCsH) + group(Cds-CdsCsH)'
+    name: CC=CCC
+    radicalelectrons: 0
+    smiles: CC=CCC
+    thermo:
+      polys:
+      - Tmax: 1059.7843592406484
+        Tmin: 100.0
+        coefs:
+        - 1.9460824823965175
+        - 0.036483270576645695
+        - 8.355334767099435e-06
+        - -2.8327948199273266e-08
+        - 1.1181475621712177e-11
+        - -6238.660004055782
+        - 19.259228772390244
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 1059.7843592406484
+        coefs:
+        - 8.365811521875747
+        - 0.03181483542758974
+        - -1.2724592665658734e-05
+        - 2.3496607650702933e-09
+        - -1.6392305905592477e-13
+        - -8697.90538788817
+        - -17.267862765204562
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo group additivity estimation: group(Cs-CsCsHH) + group(Cs-CsCsHH)
+      + group(Cs-CsHHH) + group(Cs-CsHHH) + group(CsJ2_singlet-CsH)'
+    name: CC[C]CC
+    radicalelectrons: 0
+    smiles: CC[C]CC
+    thermo:
+      polys:
+      - Tmax: 2216.652791494481
+        Tmin: 100.0
+        coefs:
+        - 1.7483138704684411
+        - 0.0494323619407935
+        - -2.5768345897362627e-05
+        - 6.323718948367204e-09
+        - -6.205628226863236e-13
+        - 31420.72587707963
+        - 28.532058187798185
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 2216.652791494481
+        coefs:
+        - 13.827695512454541
+        - 0.02763457409451225
+        - -1.101768743029798e-05
+        - 1.8873477652452863e-09
+        - -1.2021085580623304e-13
+        - 26065.633448098488
+        - -39.35899284882212
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo group additivity estimation: group(Cs-CsHHH) + group(Cs-CsHHH)
+      + group(CsJ2_singlet-CsH)'
+    name: C[C]C
+    radicalelectrons: 0
+    smiles: C[C]C
+    thermo:
+      polys:
+      - Tmax: 1330.2402053438618
+        Tmin: 100.0
+        coefs:
+        - 2.923632675715795
+        - 0.021086936824177054
+        - -1.8239048159194198e-06
+        - -5.359561403758457e-09
+        - 1.8609749555325478e-12
+        - 37101.46246856818
+        - 19.837435452774383
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 1330.2402053438618
+        coefs:
+        - 5.207649482295993
+        - 0.020552214901748977
+        - -8.362429829618637e-06
+        - 1.4963487352238563e-09
+        - -1.0012874375027772e-13
+        - 35933.45663914974
+        - 6.0604190245257
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo group additivity estimation: group(Cs-(Cds-Cds)HHH) + group(Cds-CdsCsH)
+      + group(Cds-CdsHH) + radical(Allyl_P)'
+    name: '[CH2]C=C'
+    radicalelectrons: 1
+    smiles: '[CH2]C=C'
+    thermo:
+      polys:
+      - Tmax: 952.0207687263277
+        Tmin: 100.0
+        coefs:
+        - 3.3192158848318907
+        - 0.005665921284169713
+        - 4.2741045949592956e-05
+        - -5.7877894348207386e-08
+        - 2.216751522527984e-11
+        - 18990.62081352049
+        - 9.196764387117618
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 952.0207687263277
+        coefs:
+        - 7.557439542846112
+        - 0.011480614944888189
+        - -3.6392362389014067e-06
+        - 6.63515498635246e-10
+        - -4.952609677399454e-14
+        - 17113.164532534178
+        - -16.663978982320213
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo group additivity estimation: group(Cs-CsCsHH) + group(Cs-CsCsHH)
+      + group(Cs-CsCsHH) + ring(Cyclopropane) + radical(cyclopropane)'
+    name: '[CH]1CC1'
+    radicalelectrons: 1
+    smiles: '[CH]1CC1'
+    thermo:
+      polys:
+      - Tmax: 957.4778597272593
+        Tmin: 100.0
+        coefs:
+        - 3.8719156510006187
+        - -0.008420647397602324
+        - 7.510705549261751e-05
+        - -8.622914887629687e-08
+        - 3.094470763100556e-11
+        - 32245.990326300274
+        - 9.720193247584483
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 957.4778597272593
+        coefs:
+        - 5.628863744622942
+        - 0.013293122739027339
+        - -4.426022610608329e-06
+        - 8.391965510809563e-10
+        - -6.381592691481843e-14
+        - 30577.77478871538
+        - -5.634283220144503
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo group additivity estimation: group(Cs-CsCsHH) + group(Cs-CsHHH)
+      + group(Cs-CsHHH) + radical(CCJC)'
+    name: C[CH]C
+    radicalelectrons: 1
+    smiles: C[CH]C
+    thermo:
+      polys:
+      - Tmax: 1100.3008287084108
+        Tmin: 100.0
+        coefs:
+        - 3.211746983898813
+        - 0.013107515303903397
+        - 1.991735533727757e-05
+        - -2.558775628463101e-08
+        - 8.258473692071846e-12
+        - 8907.923204942725
+        - 11.846645888092192
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 1100.3008287084108
+        coefs:
+        - 3.6555753658032906
+        - 0.02305844178301973
+        - -9.41371376222418e-06
+        - 1.7359245304014033e-09
+        - -1.2010226796058958e-13
+        - 8110.224925684134
+        - 6.481926232819924
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo group additivity estimation: group(Cs-(Cds-Cds)CsHH) + group(Cs-CsHHH)
+      + group(Cds-CdsCsH) + group(Cds-CdsHH)'
+    name: C=CCC
+    radicalelectrons: 0
+    smiles: C=CCC
+    thermo:
+      polys:
+      - Tmax: 991.7971854943222
+        Tmin: 100.0
+        coefs:
+        - 2.6417332216207488
+        - 0.020370302844138346
+        - 3.05806144676188e-05
+        - -4.8555313027048585e-08
+        - 1.8522905124668605e-11
+        - -1929.8078176305592
+        - 14.953758692759267
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 991.7971854943222
+        coefs:
+        - 7.808388945456772
+        - 0.02292405175053041
+        - -8.658830310710997e-06
+        - 1.6004953820523295e-09
+        - -1.138763456452127e-13
+        - -4105.118903818936
+        - -15.729668638032924
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo group additivity estimation: group(Cs-CsCsHH) + group(Cs-CsHHH)
+      + group(Cs-CsHHH) + group(CsJ2_singlet-CsH)'
+    name: C[C]CC
+    radicalelectrons: 0
+    smiles: C[C]CC
+    thermo:
+      polys:
+      - Tmax: 1802.4042522966479
+        Tmin: 100.0
+        coefs:
+        - 2.2355166449641475
+        - 0.036212772855797125
+        - -1.626687166800873e-05
+        - 2.7719049535719522e-09
+        - -6.637064644401629e-14
+        - 34266.312822949156
+        - 25.257034688504252
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 1802.4042522966479
+        coefs:
+        - 10.502280886904682
+        - 0.022635588022589692
+        - -8.936423544631312e-06
+        - 1.528503580433768e-09
+        - -9.751744508066399e-14
+        - 30511.676017070644
+        - -21.64432275954578
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo group additivity estimation: group(Cs-(Cds-Cds)HHH) + group(Cs-(Cds-Cds)HHH)
+      + group(Cds-CdsCsH) + group(Cds-CdsCsH)'
+    name: CC=CC
+    radicalelectrons: 0
+    smiles: CC=CC
+    thermo:
+      polys:
+      - Tmax: 1081.862619640375
+        Tmin: 100.0
+        coefs:
+        - 2.6174641848765003
+        - 0.024342091110171826
+        - 1.1737114933265558e-05
+        - -2.3995669990889584e-08
+        - 8.680024492188348e-12
+        - -3541.5137052149403
+        - 13.24424090608524
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 1081.862619640375
+        coefs:
+        - 5.994923907216563
+        - 0.026138715066609922
+        - -1.0558906350961557e-05
+        - 1.9478751980502933e-09
+        - -1.3528370969640882e-13
+        - -5108.233509310023
+        - -7.179187424212558
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  - comment: 'Thermo group additivity estimation: group(Cs-CsCsHH) + group(Cs-CsHHH)
+      + group(Cs-CsHHH) + radical(RCCJ) + radical(RCCJ)'
+    name: '[CH2]C[CH2]'
+    radicalelectrons: 2
+    smiles: '[CH2]C[CH2]'
+    thermo:
+      polys:
+      - Tmax: 1011.0207175248098
+        Tmin: 100.0
+        coefs:
+        - 3.130192268173394
+        - 0.013935840809885221
+        - 1.7198525145101497e-05
+        - -2.693774310437483e-08
+        - 9.949565868292185e-12
+        - 34911.04717095986
+        - 13.361941355420612
+        type: NASApolynomial
+      - Tmax: 5000.0
+        Tmin: 1011.0207175248098
+        coefs:
+        - 5.487816956630752
+        - 0.0173101007658789
+        - -6.6529455985278895e-06
+        - 1.2164598218700744e-09
+        - -8.503447343008257e-14
+        - 33785.15204366371
+        - -1.24856188502765
+        type: NASApolynomial
+      type: NASA
+    type: Species
+  name: phase
+Reactions:
+- comment: 'Matched reaction 56 H + H <=> H2 in R_Recombination/training
+
+    This reaction matched rate rule [Root_1R->H_N-2R->S_2CHNO->H]
+
+    family: R_Recombination'
+  kinetics:
+    A: 54500.00000000001
+    Ea: 6276.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - H2
+  radicalchange: -2
+  reactants:
+  - H
+  - H
+  type: ElementaryReaction
+- comment: Estimated from node Root_N-1R->H_N-1CNOS->N_N-1COS->O_1CS->C_N-1C-inRing_Ext-2R-R_Ext-3R!H-R_N-Sp-3R!H=2R
+  kinetics:
+    A: 31879500000.0
+    Ea: 0.0
+    n: -1.17734
+    type: Arrhenius
+  products:
+  - C6H14
+  radicalchange: -2
+  reactants:
+  - C[CH2]
+  - '[CH2]CCC'
+  type: ElementaryReaction
+- comment: 'Matched reaction 2903 C2H5 + C2H4 <=> C4H9-2 in R_Addition_MultipleBond/training
+
+    This reaction matched rate rule [Cds-HH_Cds-HH;CsJ-CsHH]
+
+    family: R_Addition_MultipleBond'
+  kinetics:
+    A: 3.6280000000000005e-05
+    Ea: 28727.34399999999
+    n: 2.997
+    type: Arrhenius
+  products:
+  - '[CH2]CCC'
+  radicalchange: 0
+  reactants:
+  - C2H4
+  - C[CH2]
+  type: ElementaryReaction
+- comment: 'Estimated using template [Y_rad;Birad] for rate rule [C_methyl;Birad]
+
+    Euclidian distance = 2.0
+
+    family: Birad_R_Recombination'
+  kinetics:
+    A: 417251.92951591336
+    Ea: -112.92219935097691
+    n: 0.5742326485393322
+    type: Arrhenius
+  products:
+  - C[CH2]
+  radicalchange: -2
+  reactants:
+  - CH2
+  - CH3
+  type: ElementaryReaction
+- comment: 'Matched reaction 2541 H + C2H4 <=> C2H5-2 in R_Addition_MultipleBond/training
+
+    This reaction matched rate rule [Cds-HH_Cds-HH;HJ]
+
+    family: R_Addition_MultipleBond'
+  kinetics:
+    A: 462.00000000000006
+    Ea: 4225.84
+    n: 1.64
+    type: Arrhenius
+  products:
+  - C[CH2]
+  radicalchange: 0
+  reactants:
+  - H
+  - C2H4
+  type: ElementaryReaction
+- comment: 'Matched reaction 210 C2H6 + H <=> C2H5b + H2_p in H_Abstraction/training
+
+    This reaction matched rate rule [H2;C_rad/H2/Cs\H3]
+
+    family: H_Abstraction'
+  kinetics:
+    A: 115.00000000000001
+    Ea: 31505.52
+    n: 1.9
+    type: Arrhenius
+  products:
+  - H2
+  - C[CH2]
+  radicalchange: 0
+  reactants:
+  - H
+  - C2H6
+  type: ElementaryReaction
+- comment: 'Matched reaction 4 H + C2H5 <=> H2 + C2H4 in Disproportionation/training
+
+    This reaction matched rate rule [Root_4R->H_Sp-2R!H-1R!H_2R!H-u1_N-1R!H->O_1CN->C_2R!H->C]
+
+    family: Disproportionation'
+  kinetics:
+    A: 10830000.000000002
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - H2
+  - C2H4
+  radicalchange: -2
+  reactants:
+  - H
+  - C[CH2]
+  type: ElementaryReaction
+- comment: 'Matched reaction 58 H + C2H5 <=> C2H6-2 in R_Recombination/training
+
+    This reaction matched rate rule [Root_1R->H_N-2R->S_N-2CHNO->H_N-2CNO-inRing_Ext-2CNO-R_N-Sp-3R!H=2CCNNOO_N-2CNO->O_3R!H->C_Sp-3C-2CN]
+
+    family: R_Recombination'
+  kinetics:
+    A: 100000000.00000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C2H6
+  radicalchange: -2
+  reactants:
+  - H
+  - C[CH2]
+  type: ElementaryReaction
+- comment: 'Matched reaction 6 C2H5 + C2H5-2 <=> C2H6 + C2H4 in Disproportionation/training
+
+    This reaction matched rate rule [Root_N-4R->H_4CNOS-u1_N-1R!H->O_N-4CNOS->O_Ext-4CNS-R_N-Sp-5R!H#4CCCNNNSSS_N-2R!H->S_N-5R!H->O_Sp-5CS-4CCNSS_1CNS->C]
+
+    family: Disproportionation'
+  kinetics:
+    A: 69000000.00000001
+    Ea: 0.0
+    n: -0.35
+    type: Arrhenius
+  products:
+  - C2H4
+  - C2H6
+  radicalchange: -2
+  reactants:
+  - C[CH2]
+  - C[CH2]
+  type: ElementaryReaction
+- comment: Estimated from node Root_N-1R->H_N-1CNOS->N_N-1COS->O_1CS->C_N-1C-inRing_Ext-2R-R_Ext-3R!H-R_N-Sp-3R!H=2R
+  kinetics:
+    A: 15939750000.0
+    Ea: 0.0
+    n: -1.17734
+    type: Arrhenius
+  products:
+  - C6H14
+  radicalchange: -2
+  reactants:
+  - '[CH2]CC'
+  - '[CH2]CC'
+  type: ElementaryReaction
+- comment: 'Estimated using template [Y_rad;Birad] for rate rule [C_rad/H2/Cs;Birad]
+
+    Euclidian distance = 3.0
+
+    family: Birad_R_Recombination'
+  kinetics:
+    A: 417251.92951591336
+    Ea: -112.92219935097691
+    n: 0.5742326485393322
+    type: Arrhenius
+  products:
+  - '[CH2]CCC'
+  radicalchange: -2
+  reactants:
+  - CH2
+  - '[CH2]CC'
+  type: ElementaryReaction
+- comment: 'Matched reaction 9 CH3 + CH3 <=> C2H6 in R_Recombination/training
+
+    This reaction matched rate rule [Root_N-1R->H_N-1CNOS->N_N-1COS->O_1CS->C_N-1C-inRing]
+
+    family: R_Recombination'
+  kinetics:
+    A: 945000000.0000001
+    Ea: 565.2584
+    n: -0.538
+    type: Arrhenius
+  products:
+  - C2H6
+  radicalchange: -2
+  reactants:
+  - CH3
+  - CH3
+  type: ElementaryReaction
+- comment: 'Estimated using an average for rate rule [H_rad;Birad]
+
+    Euclidian distance = 0
+
+    family: Birad_R_Recombination'
+  kinetics:
+    A: 10000000.0
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CH3
+  radicalchange: -2
+  reactants:
+  - H
+  - CH2
+  type: ElementaryReaction
+- comment: 'Estimated using template [Y_rad;Birad] for rate rule [C_rad/H2/Cs;Birad]
+
+    Euclidian distance = 3.0
+
+    family: Birad_R_Recombination'
+  kinetics:
+    A: 417251.92951591336
+    Ea: -112.92219935097691
+    n: 0.5742326485393322
+    type: Arrhenius
+  products:
+  - '[CH2]CC'
+  radicalchange: -2
+  reactants:
+  - CH2
+  - C[CH2]
+  type: ElementaryReaction
+- comment: 'Matched reaction 2920 C3H7-4 <=> propene_2 + H in R_Addition_MultipleBond/training
+
+    This reaction matched rate rule [Cds-CsH_Cds-HH;HJ]
+
+    family: R_Addition_MultipleBond'
+  kinetics:
+    A: 9.95e+30
+    Ea: 179912.0
+    n: -5.3
+    type: Arrhenius
+  products:
+  - H
+  - C3H6
+  radicalchange: 0
+  reactants:
+  - '[CH2]CC'
+  type: ElementaryReaction
+- comment: 'Matched reaction 2902 CH3 + C2H4 <=> C3H7 in R_Addition_MultipleBond/training
+
+    This reaction matched rate rule [Cds-HH_Cds-HH;CsJ-HHH]
+
+    family: R_Addition_MultipleBond'
+  kinetics:
+    A: 0.0008610000000000001
+    Ea: 30283.792
+    n: 2.988
+    type: Arrhenius
+  products:
+  - '[CH2]CC'
+  radicalchange: 0
+  reactants:
+  - CH3
+  - C2H4
+  type: ElementaryReaction
+- comment: 'Estimated using template [C/H3/Cs;C_rad/H2/Cs\H3] for rate rule [C/H3/Cs\H2\Cs;C_rad/H2/Cs\H3]
+
+    Euclidian distance = 2.0
+
+    Multiplied by reaction path degeneracy 6.0
+
+    family: H_Abstraction'
+  kinetics:
+    A: 5.520000000000001e-09
+    Ea: 38492.8
+    n: 4.34
+    type: Arrhenius
+  products:
+  - C2H6
+  - '[CH2]CC'
+  radicalchange: 0
+  reactants:
+  - C[CH2]
+  - C3H8
+  type: ElementaryReaction
+- comment: 'Matched reaction 186 CH4b + H <=> CH3_p1 + H2_p in H_Abstraction/training
+
+    This reaction matched rate rule [H2;C_methyl]
+
+    family: H_Abstraction'
+  kinetics:
+    A: 0.0041
+    Ea: 36630.92
+    n: 3.156
+    type: Arrhenius
+  products:
+  - H2
+  - CH3
+  radicalchange: 0
+  reactants:
+  - H
+  - CH4
+  type: ElementaryReaction
+- comment: 'Estimated using average of templates [C/H3/Cs\OneNonDe;H_rad] + [C/H3/Cs\H2\Cs;Y_rad]
+    for rate rule [C/H3/Cs\H2\Cs;H_rad]
+
+    Euclidian distance = 1.0
+
+    Multiplied by reaction path degeneracy 6.0
+
+    family: H_Abstraction'
+  kinetics:
+    A: 0.01663824119508111
+    Ea: 27178.8022
+    n: 2.718
+    type: Arrhenius
+  products:
+  - H2
+  - '[CH2]CC'
+  radicalchange: 0
+  reactants:
+  - H
+  - C3H8
+  type: ElementaryReaction
+- comment: 'Matched reaction 18 H + C3H7-2 <=> H2 + C3H6-2 in Disproportionation/training
+
+    This reaction matched rate rule [Root_Ext-1R!H-R_N-4R->O_N-Sp-5R!H=1R!H_N-4CHNS->C]
+
+    family: Disproportionation'
+  kinetics:
+    A: 3620000.0000000005
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - H2
+  - C3H6
+  radicalchange: -2
+  reactants:
+  - H
+  - '[CH2]CC'
+  type: ElementaryReaction
+- comment: Estimated from node Root_1R->H_N-2R->S_N-2CHNO->H_N-2CNO-inRing_Ext-2CNO-R_N-Sp-3R!H=2CCNNOO_N-2CNO->O_3R!H->C_Sp-3C-2CN_Ext-3C-R_N-Sp-4R!H=3C_Sp-4R!H-3C
+  kinetics:
+    A: 91749900.0
+    Ea: 0.0
+    n: 0.115342
+    type: Arrhenius
+  products:
+  - C3H8
+  radicalchange: -2
+  reactants:
+  - H
+  - '[CH2]CC'
+  type: ElementaryReaction
+- comment: 'Matched reaction 21 C3H7-2 + C2H5-2 <=> C2H6 + C3H6-2 in Disproportionation/training
+
+    This reaction matched rate rule [Root_Ext-1R!H-R_N-4R->O_N-Sp-5R!H=1R!H_Ext-4CHNS-R_N-6R!H->S_4CHNS->C_N-Sp-6BrBrBrCCCClClClFFFIIINNNOOOPPPSiSiSi#4C_6BrCClFINOPSi->C_N-1R!H-inRing_Sp-6C-4C]
+
+    family: Disproportionation'
+  kinetics:
+    A: 2900000.0000000005
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C2H6
+  - C3H6
+  radicalchange: -2
+  reactants:
+  - C[CH2]
+  - '[CH2]CC'
+  type: ElementaryReaction
+- comment: 'Estimated from node Root_N-4R->H_4CNOS-u1_N-1R!H->O_N-4CNOS->O_Ext-4CNS-R_N-Sp-5R!H#4CCCNNNSSS_N-2R!H->S_N-5R!H->O_Sp-5CS-4CCNSS_1CNS->C_Ext-5CS-R
+
+    Multiplied by reaction path degeneracy 3.0'
+  kinetics:
+    A: 68700000.0
+    Ea: 0.0
+    n: -0.35
+    type: Arrhenius
+  products:
+  - C2H4
+  - C3H8
+  radicalchange: -2
+  reactants:
+  - C[CH2]
+  - '[CH2]CC'
+  type: ElementaryReaction
+- comment: 'Estimated from node Root_Ext-1R!H-R_N-4R->O_N-Sp-5R!H=1R!H_Ext-4CHNS-R_N-6R!H->S_4CHNS->C_N-Sp-6BrBrBrCCCClClClFFFIIINNNOOOPPPSiSiSi#4C_6BrCClFINOPSi->C_N-1R!H-inRing_Sp-6C-4C_Ext-6C-R
+
+    Multiplied by reaction path degeneracy 2.0'
+  kinetics:
+    A: 2900000.0
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C3H6
+  - C3H8
+  radicalchange: -2
+  reactants:
+  - '[CH2]CC'
+  - '[CH2]CC'
+  type: ElementaryReaction
+- comment: Estimated from node Root_1R->H_N-2R->S_N-2CHNO->H_N-2CNO-inRing_Ext-2CNO-R_N-Sp-3R!H=2CCNNOO_N-2CNO->O_Ext-2CN-R
+  kinetics:
+    A: 17663700.0
+    Ea: 0.0
+    n: 0.153073
+    type: Arrhenius
+  products:
+  - C6H14
+  radicalchange: -2
+  reactants:
+  - H
+  - C[CH]CCCC
+  type: ElementaryReaction
+- comment: 'Estimated using an average for rate rule [C/H2/NonDeC;H_rad]
+
+    Euclidian distance = 0
+
+    Multiplied by reaction path degeneracy 4.0
+
+    family: H_Abstraction'
+  kinetics:
+    A: 0.00012765000788334059
+    Ea: 19664.800000000003
+    n: 3.6799999999999997
+    type: Arrhenius
+  products:
+  - H2
+  - C[CH]CCCC
+  radicalchange: 0
+  reactants:
+  - H
+  - C6H14
+  type: ElementaryReaction
+- comment: 'Estimated using an average for rate rule [C/H2/NonDeC;C_rad/H2/Cs\H3]
+
+    Euclidian distance = 0
+
+    Multiplied by reaction path degeneracy 4.0
+
+    family: H_Abstraction'
+  kinetics:
+    A: 4.327733514008861e-09
+    Ea: 31531.675000000003
+    n: 4.29
+    type: Arrhenius
+  products:
+  - C2H6
+  - C[CH]CCCC
+  radicalchange: 0
+  reactants:
+  - C[CH2]
+  - C6H14
+  type: ElementaryReaction
+- comment: 'Estimated from node Root_N-4R->H_4CNOS-u1_N-1R!H->O_N-4CNOS->O_Ext-4CNS-R_N-Sp-5R!H#4CCCNNNSSS_N-2R!H->S_N-5R!H->O_Sp-5CS-4CCNSS_Ext-4CNS-R
+
+    Multiplied by reaction path degeneracy 3.0'
+  kinetics:
+    A: 2330481000.0
+    Ea: 0.0
+    n: -0.9
+    type: Arrhenius
+  products:
+  - C2H4
+  - C6H14
+  radicalchange: -2
+  reactants:
+  - C[CH2]
+  - C[CH]CCCC
+  type: ElementaryReaction
+- comment: 'Estimated using an average for rate rule [C/H2/NonDeC;C_rad/H2/Cs]
+
+    Euclidian distance = 0
+
+    Multiplied by reaction path degeneracy 4.0
+
+    family: H_Abstraction'
+  kinetics:
+    A: 4.327733514008861e-09
+    Ea: 31531.675000000003
+    n: 4.29
+    type: Arrhenius
+  products:
+  - C3H8
+  - C[CH]CCCC
+  radicalchange: 0
+  reactants:
+  - '[CH2]CC'
+  - C6H14
+  type: ElementaryReaction
+- comment: 'Matched reaction 10 CH3 + C2H5 <=> C3H8 in R_Recombination/training
+
+    This reaction matched rate rule [Root_N-1R->H_N-1CNOS->N_N-1COS->O_1CS->C_N-1C-inRing_Ext-2R-R_Sp-3R!H-2R_3R!H->C_2R->C]
+
+    family: R_Recombination'
+  kinetics:
+    A: 1230000000.0000002
+    Ea: 85.772
+    n: -0.562
+    type: Arrhenius
+  products:
+  - C3H8
+  radicalchange: -2
+  reactants:
+  - CH3
+  - C[CH2]
+  type: ElementaryReaction
+- comment: 'Matched reaction 57 H + CH3 <=> CH4 in R_Recombination/training
+
+    This reaction matched rate rule [Root_1R->H_N-2R->S_N-2CHNO->H_N-2CNO-inRing_N-2CNO->O]
+
+    family: R_Recombination'
+  kinetics:
+    A: 193000000.00000003
+    Ea: 1129.68
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CH4
+  radicalchange: -2
+  reactants:
+  - H
+  - CH3
+  type: ElementaryReaction
+- comment: 'Matched reaction 2925 C6H13-13 <=> propene_1 + C3H7-5 in R_Addition_MultipleBond/training
+
+    This reaction matched rate rule [Cds-HH_Cds-Cs\H3/H;CsJ-CsHH]
+
+    family: R_Addition_MultipleBond'
+  kinetics:
+    A: 1.77e+29
+    Ea: 159870.64
+    n: -4.6
+    type: Arrhenius
+  products:
+  - C3H6
+  - '[CH2]CC'
+  radicalchange: 0
+  reactants:
+  - C[CH]CCCC
+  type: ElementaryReaction
+- comment: 'Estimated from node Root_Ext-1R!H-R_N-4R->O_N-Sp-5R!H=1R!H_Ext-4CHNS-R_N-6R!H->S_4CHNS->C_N-Sp-6BrBrBrCCCClClClFFFIIINNNOOOPPPSiSiSi#4C_6BrCClFINOPSi->C_N-1R!H-inRing_Ext-4C-R_2R!H->C
+
+    Multiplied by reaction path degeneracy 2.0'
+  kinetics:
+    A: 210530000.0
+    Ea: 0.0
+    n: -0.55
+    type: Arrhenius
+  products:
+  - C3H6
+  - C6H14
+  radicalchange: -2
+  reactants:
+  - '[CH2]CC'
+  - C[CH]CCCC
+  type: ElementaryReaction
+- comment: 'Estimated using an average for rate rule [C/H2/NonDeC;C_methyl]
+
+    Euclidian distance = 0
+
+    Multiplied by reaction path degeneracy 4.0
+
+    family: H_Abstraction'
+  kinetics:
+    A: 3.2120000000000006e-08
+    Ea: 27656.199999999997
+    n: 4.34
+    type: Arrhenius
+  products:
+  - CH4
+  - C[CH]CCCC
+  radicalchange: 0
+  reactants:
+  - CH3
+  - C6H14
+  type: ElementaryReaction
+- comment: 'Matched reaction 5 CH3_r1 + C2H5 <=> CH4 + C2H4 in Disproportionation/training
+
+    This reaction matched rate rule [Root_N-4R->H_4CNOS-u1_N-1R!H->O_N-4CNOS->O_4CNS->C_1CNS->C_Sp-2R!H-1C_2R!H->C]
+
+    family: Disproportionation'
+  kinetics:
+    A: 657000000.0000001
+    Ea: 0.0
+    n: -0.68
+    type: Arrhenius
+  products:
+  - CH4
+  - C2H4
+  radicalchange: -2
+  reactants:
+  - CH3
+  - C[CH2]
+  type: ElementaryReaction
+- comment: 'Matched reaction 3 CH2 + C2H5 <=> CH3 + C2H4 in Disproportionation/training
+
+    This reaction matched rate rule [Root_N-4R->H_N-4CNOS-u1_N-1R!H->O_Sp-2R!H-1CNS_1CNS->C_2R!H->C]
+
+    family: Disproportionation'
+  kinetics:
+    A: 90300000.00000001
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CH3
+  - C2H4
+  radicalchange: -2
+  reactants:
+  - CH2
+  - C[CH2]
+  type: ElementaryReaction
+- comment: 'Matched reaction 215 C2H6 + CH3_r3 <=> C2H5b + CH4 in H_Abstraction/training
+
+    This reaction matched rate rule [C/H3/Cs\H3;C_methyl]
+
+    family: H_Abstraction'
+  kinetics:
+    A: 3.5000000000000004e-05
+    Ea: 43446.656
+    n: 3.44
+    type: Arrhenius
+  products:
+  - CH4
+  - C[CH2]
+  radicalchange: 0
+  reactants:
+  - CH3
+  - C2H6
+  type: ElementaryReaction
+- comment: 'Matched reaction 20 CH3_r1 + C3H7-2 <=> CH4 + C3H6-2 in Disproportionation/training
+
+    This reaction matched rate rule [Root_Ext-1R!H-R_N-4R->O_N-Sp-5R!H=1R!H_4CHNS->C_4C-u1]
+
+    family: Disproportionation'
+  kinetics:
+    A: 23000000.000000004
+    Ea: 0.0
+    n: -0.32
+    type: Arrhenius
+  products:
+  - CH4
+  - C3H6
+  radicalchange: -2
+  reactants:
+  - CH3
+  - '[CH2]CC'
+  type: ElementaryReaction
+- comment: 'Matched reaction 16 CH2 + C3H7-2 <=> CH3 + C3H6-2 in Disproportionation/training
+
+    This reaction matched rate rule [Root_Ext-1R!H-R_N-4R->O_N-Sp-5R!H=1R!H_4CHNS->C_N-4C-u1]
+
+    family: Disproportionation'
+  kinetics:
+    A: 3620000.0000000005
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CH3
+  - C3H6
+  radicalchange: -2
+  reactants:
+  - CH2
+  - '[CH2]CC'
+  type: ElementaryReaction
+- comment: 'Estimated using average of templates [Cs_H;CH2_triplet] + [C_methane;Y_1centerbirad]
+    for rate rule [C_methane;CH2_triplet]
+
+    Euclidian distance = 1.0
+
+    Multiplied by reaction path degeneracy 4.0
+
+    family: H_Abstraction'
+  kinetics:
+    A: 853.2852732925302
+    Ea: 45419.743
+    n: 1.2816666666666667
+    type: Arrhenius
+  products:
+  - CH3
+  - CH3
+  radicalchange: 0
+  reactants:
+  - CH2
+  - CH4
+  type: ElementaryReaction
+- comment: 'Estimated using average of templates [X_H;CH2_triplet] + [H2;Y_1centerbirad]
+    for rate rule [H2;CH2_triplet]
+
+    Euclidian distance = 1.0
+
+    Multiplied by reaction path degeneracy 2.0
+
+    family: H_Abstraction'
+  kinetics:
+    A: 397.2449261118643
+    Ea: 53767.89166666669
+    n: 1.1800000000000002
+    type: Arrhenius
+  products:
+  - H
+  - CH3
+  radicalchange: 0
+  reactants:
+  - H2
+  - CH2
+  type: ElementaryReaction
+- comment: 'Estimated using an average for rate rule [C/H2/NonDeC;CH2_triplet]
+
+    Euclidian distance = 0
+
+    Multiplied by reaction path degeneracy 4.0
+
+    family: H_Abstraction'
+  kinetics:
+    A: 3.0200000000000037e-06
+    Ea: 31254.5
+    n: 3.46
+    type: Arrhenius
+  products:
+  - CH3
+  - C[CH]CCCC
+  radicalchange: 0
+  reactants:
+  - CH2
+  - C6H14
+  type: ElementaryReaction
+- comment: Estimated from node Root_1R->H_N-2R->S_N-2CHNO->H_N-2CNO-inRing_Ext-2CNO-R_N-Sp-3R!H=2CCNNOO_N-2CNO->O_Ext-2CN-R
+  kinetics:
+    A: 17663700.0
+    Ea: 0.0
+    n: 0.153073
+    type: Arrhenius
+  products:
+  - C6H14
+  radicalchange: -2
+  reactants:
+  - H
+  - CC[CH]CCC
+  type: ElementaryReaction
+- comment: 'Estimated using an average for rate rule [C/H2/NonDeC;H_rad]
+
+    Euclidian distance = 0
+
+    Multiplied by reaction path degeneracy 4.0
+
+    family: H_Abstraction'
+  kinetics:
+    A: 0.00012765000788334059
+    Ea: 19664.800000000003
+    n: 3.6799999999999997
+    type: Arrhenius
+  products:
+  - H2
+  - CC[CH]CCC
+  radicalchange: 0
+  reactants:
+  - H
+  - C6H14
+  type: ElementaryReaction
+- comment: 'Estimated using an average for rate rule [C/H2/NonDeC;C_rad/H2/Cs\H3]
+
+    Euclidian distance = 0
+
+    Multiplied by reaction path degeneracy 4.0
+
+    family: H_Abstraction'
+  kinetics:
+    A: 4.327733514008861e-09
+    Ea: 31531.675000000003
+    n: 4.29
+    type: Arrhenius
+  products:
+  - C2H6
+  - CC[CH]CCC
+  radicalchange: 0
+  reactants:
+  - C[CH2]
+  - C6H14
+  type: ElementaryReaction
+- comment: 'Estimated from node Root_N-4R->H_4CNOS-u1_N-1R!H->O_N-4CNOS->O_Ext-4CNS-R_N-Sp-5R!H#4CCCNNNSSS_N-2R!H->S_N-5R!H->O_Sp-5CS-4CCNSS_Ext-4CNS-R
+
+    Multiplied by reaction path degeneracy 3.0'
+  kinetics:
+    A: 2330481000.0
+    Ea: 0.0
+    n: -0.9
+    type: Arrhenius
+  products:
+  - C2H4
+  - C6H14
+  radicalchange: -2
+  reactants:
+  - C[CH2]
+  - CC[CH]CCC
+  type: ElementaryReaction
+- comment: 'Estimated using an average for rate rule [C/H2/NonDeC;C_rad/H2/Cs]
+
+    Euclidian distance = 0
+
+    Multiplied by reaction path degeneracy 4.0
+
+    family: H_Abstraction'
+  kinetics:
+    A: 4.327733514008861e-09
+    Ea: 31531.675000000003
+    n: 4.29
+    type: Arrhenius
+  products:
+  - C3H8
+  - CC[CH]CCC
+  radicalchange: 0
+  reactants:
+  - '[CH2]CC'
+  - C6H14
+  type: ElementaryReaction
+- comment: 'From training reaction 357 used for R2H_S;C_rad_out_H/NonDeC;Cs_H_out_H/NonDeC
+
+    Exact match found for rate rule [R2H_S;C_rad_out_H/NonDeC;Cs_H_out_H/NonDeC]
+
+    Euclidian distance = 0
+
+    Multiplied by reaction path degeneracy 2.0
+
+    family: intra_H_migration'
+  kinetics:
+    A: 6760000000.0
+    Ea: 158992.0
+    n: 0.88
+    type: Arrhenius
+  products:
+  - C[CH]CCCC
+  radicalchange: 0
+  reactants:
+  - CC[CH]CCC
+  type: ElementaryReaction
+- comment: 'From training reaction 357 used for R2H_S;C_rad_out_H/NonDeC;Cs_H_out_H/NonDeC
+
+    Exact match found for rate rule [R2H_S;C_rad_out_H/NonDeC;Cs_H_out_H/NonDeC]
+
+    Euclidian distance = 0
+
+    Multiplied by reaction path degeneracy 2.0
+
+    family: intra_H_migration'
+  kinetics:
+    A: 6760000000.0
+    Ea: 158992.0
+    n: 0.88
+    type: Arrhenius
+  products:
+  - C[CH]CCCC
+  radicalchange: 0
+  reactants:
+  - CC[CH]CCC
+  type: ElementaryReaction
+- comment: 'Estimated from node Root_Ext-1R!H-R_N-4R->O_N-Sp-5R!H=1R!H_Ext-4CHNS-R_N-6R!H->S_4CHNS->C_N-Sp-6BrBrBrCCCClClClFFFIIINNNOOOPPPSiSiSi#4C_6BrCClFINOPSi->C_N-1R!H-inRing_Ext-4C-R_2R!H->C
+
+    Multiplied by reaction path degeneracy 2.0'
+  kinetics:
+    A: 210530000.0
+    Ea: 0.0
+    n: -0.55
+    type: Arrhenius
+  products:
+  - C3H6
+  - C6H14
+  radicalchange: -2
+  reactants:
+  - '[CH2]CC'
+  - CC[CH]CCC
+  type: ElementaryReaction
+- comment: 'Estimated using an average for rate rule [C/H2/NonDeC;C_methyl]
+
+    Euclidian distance = 0
+
+    Multiplied by reaction path degeneracy 4.0
+
+    family: H_Abstraction'
+  kinetics:
+    A: 3.2120000000000006e-08
+    Ea: 27656.199999999997
+    n: 4.34
+    type: Arrhenius
+  products:
+  - CH4
+  - CC[CH]CCC
+  radicalchange: 0
+  reactants:
+  - CH3
+  - C6H14
+  type: ElementaryReaction
+- comment: 'Estimated using an average for rate rule [C/H2/NonDeC;C_rad/H/NonDeC]
+
+    Euclidian distance = 0
+
+    Multiplied by reaction path degeneracy 4.0
+
+    family: H_Abstraction'
+  kinetics:
+    A: 5.1474950356750064e-09
+    Ea: 32269.100000000002
+    n: 4.29
+    type: Arrhenius
+  products:
+  - C[CH]CCCC
+  - C6H14
+  radicalchange: 0
+  reactants:
+  - CC[CH]CCC
+  - C6H14
+  type: ElementaryReaction
+- comment: 'From training reaction 357 used for R2H_S;C_rad_out_H/NonDeC;Cs_H_out_H/NonDeC
+
+    Exact match found for rate rule [R2H_S;C_rad_out_H/NonDeC;Cs_H_out_H/NonDeC]
+
+    Euclidian distance = 0
+
+    Multiplied by reaction path degeneracy 2.0
+
+    family: intra_H_migration'
+  kinetics:
+    A: 6760000000.0
+    Ea: 158992.0
+    n: 0.88
+    type: Arrhenius
+  products:
+  - C[CH]CCCC
+  radicalchange: 0
+  reactants:
+  - CC[CH]CCC
+  type: ElementaryReaction
+- comment: 'From training reaction 369 used for R3H_SS_Cs;C_rad_out_H/NonDeC;Cs_H_out_H/NonDeC
+
+    Exact match found for rate rule [R3H_SS_Cs;C_rad_out_H/NonDeC;Cs_H_out_H/NonDeC]
+
+    Euclidian distance = 0
+
+    Multiplied by reaction path degeneracy 2.0
+
+    family: intra_H_migration'
+  kinetics:
+    A: 1100000000.0
+    Ea: 152298.0
+    n: 1.01
+    type: Arrhenius
+  products:
+  - C[CH]CCCC
+  radicalchange: 0
+  reactants:
+  - CC[CH]CCC
+  type: ElementaryReaction
+- comment: 'Matched reaction 5 C5H10 <=> C3H6 + C2H4 in Retroene/training
+
+    This reaction matched rate rule [Root_1R!H->C_2R!H->C_5R!H->C]
+
+    family: Retroene'
+  kinetics:
+    A: 870000000000.0
+    Ea: 233000.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C2H4
+  - C3H6
+  radicalchange: 0
+  reactants:
+  - C=CCCC
+  type: ElementaryReaction
+- comment: 'From training reaction 2912 used for Cds-HH_Cds-CsH;CsJ-HHH
+
+    Exact match found for rate rule [Cds-HH_Cds-CsH;CsJ-HHH]
+
+    Euclidian distance = 0
+
+    family: R_Addition_MultipleBond'
+  kinetics:
+    A: 0.0006075000000000001
+    Ea: 29078.799999999996
+    n: 2.969
+    type: Arrhenius
+  products:
+  - CC[CH]CCC
+  radicalchange: 0
+  reactants:
+  - CH3
+  - C=CCCC
+  type: ElementaryReaction
+- comment: 'Estimated using template [CsJ2-C;CsJ2(CsC);CH] for rate rule [CsJ2-C;CsJ2(CsC);CH3]
+
+    Euclidian distance = 1.0
+
+    Multiplied by reaction path degeneracy 3.0
+
+    family: Singlet_Carbene_Intra_Disproportionation'
+  kinetics:
+    A: 2.453876619687115e+17
+    Ea: -20671.252261662252
+    n: -1.2802894437890084
+    type: Arrhenius
+  products:
+  - C=CCCC
+  radicalchange: 0
+  reactants:
+  - C[C]CCC
+  type: ElementaryReaction
+- comment: 'Estimated using average of templates [singletcarbene_CH;CsJ2C;CH2(C)]
+    + [CsJ2-C;CsJ2C;CH] for rate rule [CsJ2-C;CsJ2C;CH2(C)]
+
+    Euclidian distance = 1.0
+
+    Multiplied by reaction path degeneracy 2.0
+
+    family: Singlet_Carbene_Intra_Disproportionation'
+  kinetics:
+    A: 210453526904500.62
+    Ea: 39132.88746455801
+    n: -0.27872344647580355
+    type: Arrhenius
+  products:
+  - CC=CCC
+  radicalchange: 0
+  reactants:
+  - C[C]CCC
+  type: ElementaryReaction
+- comment: 'Estimated using template [CsJ2-C;CsJ2(CsC);CH] for rate rule [CsJ2-C;CsJ2(CsC);CH2(C)]
+
+    Euclidian distance = 1.0
+
+    Multiplied by reaction path degeneracy 4.0
+
+    family: Singlet_Carbene_Intra_Disproportionation'
+  kinetics:
+    A: 3.271835492916153e+17
+    Ea: -20671.252261662252
+    n: -1.2802894437890084
+    type: Arrhenius
+  products:
+  - CC=CCC
+  radicalchange: 0
+  reactants:
+  - CC[C]CC
+  type: ElementaryReaction
+- comment: 'Estimated using template [CsJ2-C;CsJ2C;CH] for rate rule [CsJ2-C;CsJ2C;CH3]
+
+    Euclidian distance = 1.0
+
+    Multiplied by reaction path degeneracy 6.0
+
+    family: Singlet_Carbene_Intra_Disproportionation'
+  kinetics:
+    A: 1.939837916703925e+17
+    Ea: 61038.15492911602
+    n: -0.9709468929516071
+    type: Arrhenius
+  products:
+  - C3H6
+  radicalchange: 0
+  reactants:
+  - C[C]C
+  type: ElementaryReaction
+- comment: 'Matched reaction 121 H + C3H5 <=> C3H6-2 in R_Recombination/training
+
+    This reaction matched rate rule [Root_1R->H_N-2R->S_N-2CHNO->H_N-2CNO-inRing_Ext-2CNO-R_N-Sp-3R!H=2CCNNOO_N-2CNO->O_3R!H->C_Sp-3C-2CN_Ext-3C-R_Sp-4R!H=3C_N-3C-inRing]
+
+    family: R_Recombination'
+  kinetics:
+    A: 58400000.00000001
+    Ea: 518.816
+    n: 0.18
+    type: Arrhenius
+  products:
+  - C3H6
+  radicalchange: -2
+  reactants:
+  - H
+  - '[CH2]C=C'
+  type: ElementaryReaction
+- comment: 'Matched reaction 7 C3H5 + C2H5 <=> C3H6 + C2H4 in Disproportionation/training
+
+    This reaction matched rate rule [Root_N-4R->H_4CNOS-u1_N-1R!H->O_N-4CNOS->O_Ext-4CNS-R_N-Sp-5R!H#4CCCNNNSSS_N-2R!H->S_N-5R!H->O_Sp-5CS-4CCNSS_1CNS->C_Ext-5CS-R]
+
+    family: Disproportionation'
+  kinetics:
+    A: 137400000.00000003
+    Ea: -543.92
+    n: -0.35
+    type: Arrhenius
+  products:
+  - C2H4
+  - C3H6
+  radicalchange: -2
+  reactants:
+  - C[CH2]
+  - '[CH2]C=C'
+  type: ElementaryReaction
+- comment: 'Matched reaction 23 C3H5 + C3H7-2 <=> C3H6 + C3H6-2 in Disproportionation/training
+
+    This reaction matched rate rule [Root_Ext-1R!H-R_N-4R->O_N-Sp-5R!H=1R!H_Ext-4CHNS-R_N-6R!H->S_4CHNS->C_N-Sp-6BrBrBrCCCClClClFFFIIINNNOOOPPPSiSiSi#4C_6BrCClFINOPSi->C_N-1R!H-inRing_Sp-6C-4C_Ext-6C-R]
+
+    family: Disproportionation'
+  kinetics:
+    A: 5800000.000000001
+    Ea: -543.92
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C3H6
+  - C3H6
+  radicalchange: -2
+  reactants:
+  - '[CH2]C=C'
+  - '[CH2]CC'
+  type: ElementaryReaction
+- comment: 'Matched reaction 757 CH3_r3 + C3H6 <=> CH4b + C3H5 in H_Abstraction/training
+
+    This reaction matched rate rule [C/H3/Cd\H_Cd\H2;C_methyl]
+
+    family: H_Abstraction'
+  kinetics:
+    A: 7.200000000000001e-08
+    Ea: 31505.5
+    n: 4.25
+    type: Arrhenius
+  products:
+  - CH4
+  - '[CH2]C=C'
+  radicalchange: 0
+  reactants:
+  - CH3
+  - C3H6
+  type: ElementaryReaction
+- comment: 'Matched reaction 755 H + C3H6 <=> H2 + C3H5 in H_Abstraction/training
+
+    This reaction matched rate rule [C/H3/Cd\H_Cd\H2;H_rad]
+
+    family: H_Abstraction'
+  kinetics:
+    A: 0.0033600000000000006
+    Ea: 17949.4
+    n: 3.14
+    type: Arrhenius
+  products:
+  - H2
+  - '[CH2]C=C'
+  radicalchange: 0
+  reactants:
+  - H
+  - C3H6
+  type: ElementaryReaction
+- comment: 'Estimated using an average for rate rule [C/H3/Cd\H_Cd\H2;C_rad/H/NonDeC]
+
+    Euclidian distance = 0
+
+    Multiplied by reaction path degeneracy 3.0
+
+    family: H_Abstraction'
+  kinetics:
+    A: 9.78192706621403e-10
+    Ea: 27781.76
+    n: 4.260000000000001
+    type: Arrhenius
+  products:
+  - '[CH2]C=C'
+  - C6H14
+  radicalchange: 0
+  reactants:
+  - C3H6
+  - C[CH]CCCC
+  type: ElementaryReaction
+- comment: 'Matched reaction 870 C3H5 + C2H6 <=> C3H6 + C2H5 in H_Abstraction/training
+
+    This reaction matched rate rule [C/H3/Cd\H_Cd\H2;C_rad/H2/Cs\H3]
+
+    family: H_Abstraction'
+  kinetics:
+    A: 1.7520000000000009e-07
+    Ea: 82424.8
+    n: 4.34
+    type: Arrhenius
+  products:
+  - C[CH2]
+  - C3H6
+  radicalchange: 0
+  reactants:
+  - C2H6
+  - '[CH2]C=C'
+  type: ElementaryReaction
+- comment: 'Matched reaction 126 C3H5 + C2H5 <=> C5H10-2 in R_Recombination/training
+
+    This reaction matched rate rule [Root_N-1R->H_N-1CNOS->N_N-1COS->O_1CS->C_N-1C-inRing_Ext-2R-R_Ext-3R!H-R_N-Sp-3R!H=2R_Sp-4R!H=3R!H_Ext-1C-R]
+
+    family: R_Recombination'
+  kinetics:
+    A: 41000000.00000001
+    Ea: -543.92
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C=CCCC
+  radicalchange: -2
+  reactants:
+  - C[CH2]
+  - '[CH2]C=C'
+  type: ElementaryReaction
+- comment: 'Estimated using an average for rate rule [C/H3/Cd\H_Cd\H2;C_rad/H/NonDeC]
+
+    Euclidian distance = 0
+
+    Multiplied by reaction path degeneracy 3.0
+
+    family: H_Abstraction'
+  kinetics:
+    A: 9.78192706621403e-10
+    Ea: 27781.76
+    n: 4.260000000000001
+    type: Arrhenius
+  products:
+  - '[CH2]C=C'
+  - C6H14
+  radicalchange: 0
+  reactants:
+  - C3H6
+  - CC[CH]CCC
+  type: ElementaryReaction
+- comment: 'Estimated using template [C/H3/Cd\H_Cd\H2;Y_rad_birad_trirad_quadrad]
+    for rate rule [C/H3/Cd\H_Cd\H2;CH2_triplet]
+
+    Euclidian distance = 2.0
+
+    Multiplied by reaction path degeneracy 3.0
+
+    family: H_Abstraction'
+  kinetics:
+    A: 0.0037011991761045637
+    Ea: 27384.24507777778
+    n: 2.8240541666666665
+    type: Arrhenius
+  products:
+  - CH3
+  - '[CH2]C=C'
+  radicalchange: 0
+  reactants:
+  - CH2
+  - C3H6
+  type: ElementaryReaction
+- comment: Estimated from node Backbone0_N-2R!H-inRing_N-1R!H-inRing_Sp-2R!H-1R!H
+  kinetics:
+    A: 6.95187e+18
+    Ea: 172136.90544999554
+    n: -1.62813
+    type: Arrhenius
+  products:
+  - '[CH]1CC1'
+  radicalchange: 0
+  reactants:
+  - '[CH2]C=C'
+  type: ElementaryReaction
+- comment: 'Matched reaction 146 C3H7-2 <=> C3H7 in intra_H_migration/training
+
+    This reaction matched rate rule [R2H_S;C_rad_out_2H;Cs_H_out_H/NonDeC]
+
+    family: intra_H_migration'
+  kinetics:
+    A: 4860000000.0
+    Ea: 168615.0
+    n: 1.32
+    type: Arrhenius
+  products:
+  - '[CH2]CC'
+  radicalchange: 0
+  reactants:
+  - C[CH]C
+  type: ElementaryReaction
+- comment: 'Matched reaction 59 H + C3H7-2 <=> C3H8-2 in R_Recombination/training
+
+    This reaction matched rate rule [Root_1R->H_N-2R->S_N-2CHNO->H_N-2CNO-inRing_Ext-2CNO-R_N-Sp-3R!H=2CCNNOO_N-2CNO->O_Ext-2CN-R]
+
+    family: R_Recombination'
+  kinetics:
+    A: 20000000.000000004
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C3H8
+  radicalchange: -2
+  reactants:
+  - H
+  - C[CH]C
+  type: ElementaryReaction
+- comment: 'Estimated from node Root_Ext-2R!H-R_2R!H->C_4R->C
+
+    Multiplied by reaction path degeneracy 6.0'
+  kinetics:
+    A: 300000.0
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C3H6
+  - C6H14
+  radicalchange: -2
+  reactants:
+  - C[CH]C
+  - CC[CH]CCC
+  type: ElementaryReaction
+- comment: 'Estimated from node Root_Ext-2R!H-R_2R!H->C_4R->C
+
+    Multiplied by reaction path degeneracy 6.0'
+  kinetics:
+    A: 300000.0
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C3H6
+  - C6H14
+  radicalchange: -2
+  reactants:
+  - C[CH]C
+  - C[CH]CCCC
+  type: ElementaryReaction
+- comment: 'Matched reaction 9 C2H5 + C3H7 <=> C3H8 + C2H4 in Disproportionation/training
+
+    This reaction matched rate rule [Root_N-4R->H_4CNOS-u1_N-1R!H->O_N-4CNOS->O_Ext-4CNS-R_N-Sp-5R!H#4CCCNNNSSS_N-2R!H->S_N-5R!H->O_Sp-5CS-4CCNSS_Ext-4CNS-R]
+
+    family: Disproportionation'
+  kinetics:
+    A: 633000000.0000001
+    Ea: 0.0
+    n: -0.7
+    type: Arrhenius
+  products:
+  - C2H4
+  - C3H8
+  radicalchange: -2
+  reactants:
+  - C[CH2]
+  - C[CH]C
+  type: ElementaryReaction
+- comment: 'Estimated from node Root_Ext-2R!H-R_2R!H->C_4R->C
+
+    Multiplied by reaction path degeneracy 6.0'
+  kinetics:
+    A: 300000.0
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C2H6
+  - C3H6
+  radicalchange: -2
+  reactants:
+  - C[CH2]
+  - C[CH]C
+  type: ElementaryReaction
+- comment: 'Estimated from node Root_Ext-2R!H-R_2R!H->C_4R->C
+
+    Multiplied by reaction path degeneracy 12.0'
+  kinetics:
+    A: 600000.0
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C3H6
+  - C3H6
+  radicalchange: -2
+  reactants:
+  - '[CH2]C=C'
+  - C[CH]C
+  type: ElementaryReaction
+- comment: 'Estimated from node Root_Ext-2R!H-R_2R!H->C_4R->C
+
+    Multiplied by reaction path degeneracy 6.0'
+  kinetics:
+    A: 300000.0
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CH4
+  - C3H6
+  radicalchange: -2
+  reactants:
+  - CH3
+  - C[CH]C
+  type: ElementaryReaction
+- comment: 'Estimated from node Root_Ext-2R!H-R_2R!H->C_4R->C
+
+    Multiplied by reaction path degeneracy 6.0'
+  kinetics:
+    A: 300000.0
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CH3
+  - C3H6
+  radicalchange: -2
+  reactants:
+  - CH2
+  - C[CH]C
+  type: ElementaryReaction
+- comment: 'Estimated from node Root_Ext-2R!H-R_2R!H->C_N-4R->C
+
+    Multiplied by reaction path degeneracy 6.0'
+  kinetics:
+    A: 43380000.0
+    Ea: 10611.960241777033
+    n: 0.0
+    type: Arrhenius
+  products:
+  - H2
+  - C3H6
+  radicalchange: -2
+  reactants:
+  - H
+  - C[CH]C
+  type: ElementaryReaction
+- comment: 'Matched reaction 2814 H + propene_1 <=> C3H7-3 in R_Addition_MultipleBond/training
+
+    This reaction matched rate rule [Cds-HH_Cds-Cs\H3/H;HJ]
+
+    family: R_Addition_MultipleBond'
+  kinetics:
+    A: 1840.0000000000002
+    Ea: 6568.88
+    n: 1.553
+    type: Arrhenius
+  products:
+  - C[CH]C
+  radicalchange: 0
+  reactants:
+  - H
+  - C3H6
+  type: ElementaryReaction
+- comment: 'Matched reaction 27 C3H7-2 + C3H7 <=> C3H8 + C3H6-2 in Disproportionation/training
+
+    This reaction matched rate rule [Root_Ext-1R!H-R_N-4R->O_N-Sp-5R!H=1R!H_Ext-4CHNS-R_N-6R!H->S_4CHNS->C_N-Sp-6BrBrBrCCCClClClFFFIIINNNOOOPPPSiSiSi#4C_6BrCClFINOPSi->C_N-1R!H-inRing_Ext-4C-R_2R!H->C]
+
+    family: Disproportionation'
+  kinetics:
+    A: 51300000.00000001
+    Ea: 0.0
+    n: -0.35
+    type: Arrhenius
+  products:
+  - C3H6
+  - C3H8
+  radicalchange: -2
+  reactants:
+  - C[CH]C
+  - '[CH2]CC'
+  type: ElementaryReaction
+- comment: 'Estimated from node Root_Ext-2R!H-R_2R!H->C_4R->C
+
+    Multiplied by reaction path degeneracy 6.0'
+  kinetics:
+    A: 300000.0
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C3H6
+  - C3H8
+  radicalchange: -2
+  reactants:
+  - C[CH]C
+  - C[CH]C
+  type: ElementaryReaction
+- comment: 'Matched reaction 27 C3H7-2 + C3H7 <=> C3H8 + C3H6-2 in Disproportionation/training
+
+    This reaction matched rate rule [Root_Ext-2R!H-R_2R!H->C_4R->C]
+
+    family: Disproportionation'
+  kinetics:
+    A: 51300000.00000001
+    Ea: 0.0
+    n: -0.35
+    type: Arrhenius
+  products:
+  - C3H6
+  - C3H8
+  radicalchange: -2
+  reactants:
+  - C[CH]C
+  - '[CH2]CC'
+  type: ElementaryReaction
+- comment: 'Matched reaction 787 H2 + C3H7 <=> C3H8 + H in H_Abstraction/training
+
+    This reaction matched rate rule [H2;C_rad/H/Cs\H3/Cs\H3]
+
+    family: H_Abstraction'
+  kinetics:
+    A: 5.420000000000003e-09
+    Ea: 41421.6
+    n: 4.34
+    type: Arrhenius
+  products:
+  - H
+  - C3H8
+  radicalchange: 0
+  reactants:
+  - H2
+  - C[CH]C
+  type: ElementaryReaction
+- comment: 'Matched reaction 2921 C4H9-8 <=> butene1_2 + H in R_Addition_MultipleBond/training
+
+    This reaction matched rate rule [Cds-CsH_Cds-HH;HJ]
+
+    family: R_Addition_MultipleBond'
+  kinetics:
+    A: 1.86e+33
+    Ea: 187777.92
+    n: -5.98
+    type: Arrhenius
+  products:
+  - H
+  - C=CCC
+  radicalchange: 0
+  reactants:
+  - '[CH2]CCC'
+  type: ElementaryReaction
+- comment: 'Estimated from node Root_Ext-1R!H-R_N-4R->O_N-Sp-5R!H=1R!H_N-4CHNS->C
+
+    Multiplied by reaction path degeneracy 2.0'
+  kinetics:
+    A: 3620000.0
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - H2
+  - C=CCC
+  radicalchange: -2
+  reactants:
+  - H
+  - '[CH2]CCC'
+  type: ElementaryReaction
+- comment: 'Estimated from node Root_Ext-1R!H-R_N-4R->O_N-Sp-5R!H=1R!H_Ext-4CHNS-R_N-6R!H->S_4CHNS->C_N-Sp-6BrBrBrCCCClClClFFFIIINNNOOOPPPSiSiSi#4C_6BrCClFINOPSi->C_N-1R!H-inRing_Sp-6C-4C
+
+    Multiplied by reaction path degeneracy 2.0'
+  kinetics:
+    A: 3941700.0
+    Ea: 0.0
+    n: -0.0393785
+    type: Arrhenius
+  products:
+  - C2H6
+  - C=CCC
+  radicalchange: -2
+  reactants:
+  - C[CH2]
+  - '[CH2]CCC'
+  type: ElementaryReaction
+- comment: 'From training reaction 2913 used for Cds-HH_Cds-CsH;CsJ-CsHH
+
+    Exact match found for rate rule [Cds-HH_Cds-CsH;CsJ-CsHH]
+
+    Euclidian distance = 0
+
+    family: R_Addition_MultipleBond'
+  kinetics:
+    A: 7.150000000000007e-06
+    Ea: 26191.84
+    n: 2.992
+    type: Arrhenius
+  products:
+  - CC[CH]CCC
+  radicalchange: 0
+  reactants:
+  - C[CH2]
+  - C=CCC
+  type: ElementaryReaction
+- comment: 'Matched reaction 127 C3H5 + CH3 <=> C4H8-2 in R_Recombination/training
+
+    This reaction matched rate rule [Root_N-1R->H_N-1CNOS->N_N-1COS->O_1CS->C_N-1C-inRing_Ext-2R-R_Ext-3R!H-R_N-Sp-3R!H=2R_Sp-4R!H=3R!H]
+
+    family: R_Recombination'
+  kinetics:
+    A: 204000000.00000003
+    Ea: -543.92
+    n: -0.32
+    type: Arrhenius
+  products:
+  - C=CCC
+  radicalchange: -2
+  reactants:
+  - CH3
+  - '[CH2]C=C'
+  type: ElementaryReaction
+- comment: 'Estimated from node Root_Ext-1R!H-R_N-4R->O_N-Sp-5R!H=1R!H_Ext-4CHNS-R_N-6R!H->S_4CHNS->C_N-Sp-6BrBrBrCCCClClClFFFIIINNNOOOPPPSiSiSi#4C_6BrCClFINOPSi->C_N-1R!H-inRing_Ext-4C-R_2R!H->C
+
+    Multiplied by reaction path degeneracy 2.0'
+  kinetics:
+    A: 210530000.0
+    Ea: 0.0
+    n: -0.55
+    type: Arrhenius
+  products:
+  - C=CCC
+  - C6H14
+  radicalchange: -2
+  reactants:
+  - '[CH2]CCC'
+  - CC[CH]CCC
+  type: ElementaryReaction
+- comment: 'Estimated from node Root_Ext-1R!H-R_N-4R->O_N-Sp-5R!H=1R!H_Ext-4CHNS-R_N-6R!H->S_4CHNS->C_N-Sp-6BrBrBrCCCClClClFFFIIINNNOOOPPPSiSiSi#4C_6BrCClFINOPSi->C_N-1R!H-inRing_Ext-4C-R_2R!H->C
+
+    Multiplied by reaction path degeneracy 2.0'
+  kinetics:
+    A: 210530000.0
+    Ea: 0.0
+    n: -0.55
+    type: Arrhenius
+  products:
+  - C=CCC
+  - C6H14
+  radicalchange: -2
+  reactants:
+  - '[CH2]CCC'
+  - C[CH]CCCC
+  type: ElementaryReaction
+- comment: 'Estimated from node Root_Ext-1R!H-R_N-4R->O_N-Sp-5R!H=1R!H_Ext-4CHNS-R_N-6R!H->S_4CHNS->C_N-Sp-6BrBrBrCCCClClClFFFIIINNNOOOPPPSiSiSi#4C_6BrCClFINOPSi->C_N-1R!H-inRing_Sp-6C-4C_Ext-6C-R
+
+    Multiplied by reaction path degeneracy 4.0'
+  kinetics:
+    A: 5800000.0
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - C3H6
+  - C=CCC
+  radicalchange: -2
+  reactants:
+  - '[CH2]C=C'
+  - '[CH2]CCC'
+  type: ElementaryReaction
+- comment: 'Estimated from node Root_Ext-1R!H-R_N-4R->O_N-Sp-5R!H=1R!H_4CHNS->C_4C-u1
+
+    Multiplied by reaction path degeneracy 2.0'
+  kinetics:
+    A: 23000000.0
+    Ea: 0.0
+    n: -0.32
+    type: Arrhenius
+  products:
+  - CH4
+  - C=CCC
+  radicalchange: -2
+  reactants:
+  - CH3
+  - '[CH2]CCC'
+  type: ElementaryReaction
+- comment: 'Estimated from node Root_Ext-1R!H-R_N-4R->O_N-Sp-5R!H=1R!H_4CHNS->C_N-4C-u1
+
+    Multiplied by reaction path degeneracy 2.0'
+  kinetics:
+    A: 3620000.0
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - CH3
+  - C=CCC
+  radicalchange: -2
+  reactants:
+  - CH2
+  - '[CH2]CCC'
+  type: ElementaryReaction
+- comment: 'Estimated using template [CsJ2-C;CsJ2(CsC);CH] for rate rule [CsJ2-C;CsJ2(CsC);CH3]
+
+    Euclidian distance = 1.0
+
+    Multiplied by reaction path degeneracy 3.0
+
+    family: Singlet_Carbene_Intra_Disproportionation'
+  kinetics:
+    A: 2.453876619687115e+17
+    Ea: -20671.252261662252
+    n: -1.2802894437890084
+    type: Arrhenius
+  products:
+  - C=CCC
+  radicalchange: 0
+  reactants:
+  - C[C]CC
+  type: ElementaryReaction
+- comment: 'Estimated using average of templates [singletcarbene_CH;CsJ2C;CH2(C)]
+    + [CsJ2-C;CsJ2C;CH] for rate rule [CsJ2-C;CsJ2C;CH2(C)]
+
+    Euclidian distance = 1.0
+
+    Multiplied by reaction path degeneracy 2.0
+
+    family: Singlet_Carbene_Intra_Disproportionation'
+  kinetics:
+    A: 210453526904500.62
+    Ea: 39132.88746455801
+    n: -0.27872344647580355
+    type: Arrhenius
+  products:
+  - CC=CC
+  radicalchange: 0
+  reactants:
+  - C[C]CC
+  type: ElementaryReaction
+- comment: 'Estimated from node Root_N-1R->H_N-1CNOS->N_N-1COS->O_1CS->C_N-1C-inRing_Ext-2R-R_Ext-3R!H-R_N-Sp-3R!H=2R
+
+    Multiplied by reaction path degeneracy 2.0'
+  kinetics:
+    A: 63759000000.0
+    Ea: 0.0
+    n: -1.17734
+    type: Arrhenius
+  products:
+  - '[CH2]CCC'
+  radicalchange: -2
+  reactants:
+  - CH3
+  - '[CH2]C[CH2]'
+  type: ElementaryReaction
+- comment: 'Estimated from node Root_1R->H_N-2R->S_N-2CHNO->H_N-2CNO-inRing_Ext-2CNO-R_N-Sp-3R!H=2CCNNOO_N-2CNO->O_3R!H->C_Sp-3C-2CN_Ext-3C-R_N-Sp-4R!H=3C_Sp-4R!H-3C
+
+    Multiplied by reaction path degeneracy 2.0'
+  kinetics:
+    A: 183499800.0
+    Ea: 0.0
+    n: 0.115342
+    type: Arrhenius
+  products:
+  - '[CH2]CC'
+  radicalchange: -2
+  reactants:
+  - H
+  - '[CH2]C[CH2]'
+  type: ElementaryReaction
+- comment: 'Estimated from node Root_N-4R->H_4CNOS-u1_N-1R!H->O_N-4CNOS->O_Ext-4CNS-R_N-Sp-5R!H#4CCCNNNSSS_N-2R!H->S_N-5R!H->O_Sp-5CS-4CCNSS_1CNS->C_Ext-5CS-R
+
+    Multiplied by reaction path degeneracy 6.0'
+  kinetics:
+    A: 137400000.0
+    Ea: 0.0
+    n: -0.35
+    type: Arrhenius
+  products:
+  - C2H4
+  - '[CH2]CC'
+  radicalchange: -2
+  reactants:
+  - C[CH2]
+  - '[CH2]C[CH2]'
+  type: ElementaryReaction
+- comment: 'From training reaction 111 used for C/H3/Cs;H_rad
+
+    Exact match found for rate rule [C/H3/Cs;H_rad]
+
+    Euclidian distance = 0
+
+    Multiplied by reaction path degeneracy 3.0
+
+    family: H_Abstraction'
+  kinetics:
+    A: 16000000.000000002
+    Ea: 34200.016
+    n: 0.0
+    type: Arrhenius
+  products:
+  - H2
+  - '[CH2]C[CH2]'
+  radicalchange: 0
+  reactants:
+  - H
+  - '[CH2]CC'
+  type: ElementaryReaction
+- comment: 'Estimated using an average for rate rule [C/H3/Cs\H3;C_rad/H2/Cs]
+
+    Euclidian distance = 0
+
+    Multiplied by reaction path degeneracy 12.0
+
+    family: H_Abstraction'
+  kinetics:
+    A: 6.521202343126629e-10
+    Ea: 35522.16
+    n: 4.8100000000000005
+    type: Arrhenius
+  products:
+  - C[CH2]
+  - '[CH2]CC'
+  radicalchange: 0
+  reactants:
+  - C2H6
+  - '[CH2]C[CH2]'
+  type: ElementaryReaction
+- comment: 'Estimated using template [C/H3/Cs;C_rad/H2/Cs] for rate rule [C/H3/Cs\H2\Cs;C_rad/H2/Cs]
+
+    Euclidian distance = 2.0
+
+    Multiplied by reaction path degeneracy 12.0
+
+    family: H_Abstraction'
+  kinetics:
+    A: 6.521202343126629e-10
+    Ea: 35522.16
+    n: 4.81
+    type: Arrhenius
+  products:
+  - '[CH2]CC'
+  - '[CH2]CC'
+  radicalchange: 0
+  reactants:
+  - '[CH2]C[CH2]'
+  - C3H8
+  type: ElementaryReaction
+- comment: 'Estimated using an average for rate rule [R2radExo;Y_rad;XH_Rrad]
+
+    Euclidian distance = 0
+
+    Multiplied by reaction path degeneracy 4.0
+
+    family: Intra_Disproportionation'
+  kinetics:
+    A: 779600000000.0007
+    Ea: 22861.375999999993
+    n: 0.486
+    type: Arrhenius
+  products:
+  - C3H6
+  radicalchange: -2
+  reactants:
+  - '[CH2]C[CH2]'
+  type: ElementaryReaction
+- comment: 'Estimated from node Root_Ext-1R!H-R_N-4R->O_N-Sp-5R!H=1R!H_Ext-4CHNS-R_N-6R!H->S_4CHNS->C_N-Sp-6BrBrBrCCCClClClFFFIIINNNOOOPPPSiSiSi#4C_6BrCClFINOPSi->C_N-1R!H-inRing_Ext-4C-R
+
+    Multiplied by reaction path degeneracy 2.0'
+  kinetics:
+    A: 47211600.0
+    Ea: 0.0
+    n: -0.372184
+    type: Arrhenius
+  products:
+  - '[CH2]C=C'
+  - C6H14
+  radicalchange: -2
+  reactants:
+  - '[CH2]C[CH2]'
+  - CC[CH]CCC
+  type: ElementaryReaction
+- comment: 'Estimated from node Root_Ext-1R!H-R_N-4R->O_N-Sp-5R!H=1R!H_Ext-4CHNS-R_N-6R!H->S_4CHNS->C_N-Sp-6BrBrBrCCCClClClFFFIIINNNOOOPPPSiSiSi#4C_6BrCClFINOPSi->C_N-1R!H-inRing_Ext-4C-R
+
+    Multiplied by reaction path degeneracy 2.0'
+  kinetics:
+    A: 47211600.0
+    Ea: 0.0
+    n: -0.372184
+    type: Arrhenius
+  products:
+  - '[CH2]C=C'
+  - C6H14
+  radicalchange: -2
+  reactants:
+  - '[CH2]C[CH2]'
+  - C[CH]CCCC
+  type: ElementaryReaction
+- comment: 'Estimated from node Root_Ext-1R!H-R_N-4R->O_N-Sp-5R!H=1R!H_Ext-4CHNS-R_N-6R!H->S_4CHNS->C_N-Sp-6BrBrBrCCCClClClFFFIIINNNOOOPPPSiSiSi#4C_6BrCClFINOPSi->C_N-1R!H-inRing
+
+    Multiplied by reaction path degeneracy 2.0'
+  kinetics:
+    A: 12622180.0
+    Ea: 0.0
+    n: -0.199393
+    type: Arrhenius
+  products:
+  - C2H6
+  - '[CH2]C=C'
+  radicalchange: -2
+  reactants:
+  - C[CH2]
+  - '[CH2]C[CH2]'
+  type: ElementaryReaction
+- comment: 'Estimated from node Root_Ext-1R!H-R_N-4R->O_N-Sp-5R!H=1R!H_Ext-4CHNS-R_N-6R!H->S_4CHNS->C_N-Sp-6BrBrBrCCCClClClFFFIIINNNOOOPPPSiSiSi#4C_6BrCClFINOPSi->C_N-1R!H-inRing
+
+    Multiplied by reaction path degeneracy 4.0'
+  kinetics:
+    A: 25244360.0
+    Ea: 0.0
+    n: -0.199393
+    type: Arrhenius
+  products:
+  - '[CH2]C=C'
+  - C3H6
+  radicalchange: -2
+  reactants:
+  - '[CH2]C=C'
+  - '[CH2]C[CH2]'
+  type: ElementaryReaction
+- comment: 'Estimated from node Root_Ext-1R!H-R_N-4R->O_N-Sp-5R!H=1R!H
+
+    Multiplied by reaction path degeneracy 2.0'
+  kinetics:
+    A: 11916.92
+    Ea: 0.0
+    n: 0.568208
+    type: Arrhenius
+  products:
+  - CH4
+  - '[CH2]C=C'
+  radicalchange: -2
+  reactants:
+  - CH3
+  - '[CH2]C[CH2]'
+  type: ElementaryReaction
+- comment: 'Estimated from node Root_Ext-1R!H-R_N-4R->O_N-Sp-5R!H=1R!H
+
+    Multiplied by reaction path degeneracy 2.0'
+  kinetics:
+    A: 11916.92
+    Ea: 0.0
+    n: 0.568208
+    type: Arrhenius
+  products:
+  - CH3
+  - '[CH2]C=C'
+  radicalchange: -2
+  reactants:
+  - CH2
+  - '[CH2]C[CH2]'
+  type: ElementaryReaction
+- comment: 'Estimated from node Root_Ext-1R!H-R_N-4R->O_N-Sp-5R!H=1R!H_N-4CHNS->C
+
+    Multiplied by reaction path degeneracy 2.0'
+  kinetics:
+    A: 3620000.0
+    Ea: 0.0
+    n: 0.0
+    type: Arrhenius
+  products:
+  - H2
+  - '[CH2]C=C'
+  radicalchange: -2
+  reactants:
+  - H
+  - '[CH2]C[CH2]'
+  type: ElementaryReaction
+- comment: 'Estimated using an average for rate rule [Cds_Cds;HJ]
+
+    Euclidian distance = 0
+
+    family: R_Addition_MultipleBond'
+  kinetics:
+    A: 197.52409547466812
+    Ea: 12036.50159587289
+    n: 1.5369855865601971
+    type: Arrhenius
+  products:
+  - '[CH2]C[CH2]'
+  radicalchange: 0
+  reactants:
+  - H
+  - '[CH2]C=C'
+  type: ElementaryReaction
+- comment: 'Estimated using template [Cds-HH_Cds-HH;Y_1centerbirad] for rate rule
+    [Cds-HH_Cds-HH;CH2_triplet]
+
+    Euclidian distance = 1.0
+
+    Multiplied by reaction path degeneracy 2.0
+
+    family: R_Addition_MultipleBond'
+  kinetics:
+    A: 88.40000000000008
+    Ea: -2928.7999999999997
+    n: 1.55
+    type: Arrhenius
+  products:
+  - '[CH2]C[CH2]'
+  radicalchange: 0
+  reactants:
+  - CH2
+  - C2H4
+  type: ElementaryReaction
+Units: {}

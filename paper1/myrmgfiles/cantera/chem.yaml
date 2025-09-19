@@ -1,0 +1,1166 @@
+generator: ck2yaml
+input-files: [chem.inp, tran.dat]
+cantera-version: 2.6.0
+date: Fri, 19 Sep 2025 04:34:37 +0000
+
+units: {length: cm, time: s, quantity: mol, activation-energy: kcal/mol}
+
+phases:
+- name: gas
+  thermo: ideal-gas
+  elements: [H, D, T, C, Ci, O, Oi, N, Ne, Ar, He, Si, S, F, Cl, Br, I,
+    X]
+  species: [Ar, He, Ne, N2, C6H14(1), C2H2(2), C2H4(3), C2H6(4), C3H8(5),
+    C3H6(6), CH4(7), CH3(8), CH2(9), C6H6(10), H2(11), H(12), '[CH2]CC(15)',
+    '[CH2]CCC(16)', 'C[CH2](17)', 'CC[CH]CCC(18)', 'C[CH]CCCC(20)', C4H8(23),
+    '[CH2]C[CH2](25)', '[CH2]C[CH]C(26)', C2H3(32), 'C[CH]C(36)', C3H5(37),
+    C3H5(39), 'C[C]C(40)', C5H10(55), 'C[C]CCC(78)', 'C[C]CC(80)', C5H10(81),
+    C4H8(82), 'CC[C]CC(90)', '[CH]1CC1(94)', C6H10(112), C2H2(133), C6H10(145),
+    C6H10(157), C6H10(175), C6H10(176), C6H10(182), C6H10(185), C6H10(188)]
+  kinetics: gas
+  transport: mixture-averaged
+  state: {T: 300.0, P: 1 atm}
+
+elements:
+- symbol: Ci
+  atomic-weight: 13.003
+- symbol: D
+  atomic-weight: 2.014
+- symbol: Oi
+  atomic-weight: 17.999
+- symbol: T
+  atomic-weight: 3.016
+- symbol: X
+  atomic-weight: 195.083
+
+species:
+- name: Ar
+  composition: {Ar: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 6000.0]
+    data:
+    - [2.5, 0.0, 0.0, 0.0, 0.0, -745.375, 4.37967]
+  transport:
+    model: gas
+    geometry: atom
+    well-depth: 136.5
+    diameter: 3.33
+    note: NOx2018
+- name: He
+  composition: {He: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 6000.0]
+    data:
+    - [2.5, 0.0, 0.0, 0.0, 0.0, -745.375, 0.928724]
+  transport:
+    model: gas
+    geometry: atom
+    well-depth: 10.2
+    diameter: 2.576
+    note: NOx2018
+- name: Ne
+  composition: {Ne: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 6000.0]
+    data:
+    - [2.5, 0.0, 0.0, 0.0, 0.0, -745.375, 3.35532]
+  transport:
+    model: gas
+    geometry: atom
+    well-depth: 148.6
+    diameter: 3.758
+    note: Epsilon & sigma estimated with fixed Lennard Jones Parameters.
+      This is the fallback method! Try improving transport databases!
+- name: N2
+  composition: {N: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 1000.0, 6000.0]
+    data:
+    - [3.53101, -1.23661e-04, -5.02999e-07, 2.43531e-09, -1.40881e-12, -1046.98,
+      2.96747]
+    - [2.95258, 1.3969e-03, -4.92632e-07, 7.8601e-11, -4.60755e-15, -923.949,
+      5.87189]
+  transport:
+    model: gas
+    geometry: linear
+    well-depth: 97.53
+    diameter: 3.621
+    polarizability: 1.76
+    rotational-relaxation: 4.0
+    note: PrimaryTransportLibrary
+- name: C6H14(1)
+  composition: {C: 6, H: 14}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 1144.97, 5000.0]
+    data:
+    - [0.793273065, 0.0605338584, -1.5968043e-05, -1.17112438e-08, 6.10154588e-12,
+      -2.29522861e+04, 24.9185466]
+    - [11.0307844, 0.0431957066, -1.73946882e-05, 3.17576532e-09, -2.18145818e-13,
+      -2.65044581e+04, -31.1320454]
+  transport:
+    model: gas
+    geometry: nonlinear
+    well-depth: 385.187
+    diameter: 6.051
+    note: Epsilon & sigma estimated with Tc=500.24 K, Pc=32.8 bar (from
+      Joback method)
+- name: C2H2(2)
+  composition: {C: 2, H: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 888.62, 5000.0]
+    data:
+    - [3.03575824, 7.71225241e-03, 2.53545895e-06, -1.08140715e-08, 5.50792942e-12,
+      2.58526439e+04, 4.54457456]
+    - [5.76201774, 2.37163624e-03, -1.49611412e-07, -2.19085453e-11, 2.21720933e-15,
+      2.5094461e+04, -9.82593194]
+  transport:
+    model: gas
+    geometry: linear
+    well-depth: 209.0
+    diameter: 4.1
+    rotational-relaxation: 2.5
+    note: NOx2018
+- name: C2H4(3)
+  composition: {C: 2, H: 4}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 940.45, 5000.0]
+    data:
+    - [3.97973317, -7.57546038e-03, 5.52968113e-05, -6.3621465e-08, 2.31764021e-11,
+      5077.46134, 4.04626753]
+    - [5.20302956, 7.82436277e-03, -2.12679786e-06, 3.79681904e-10, -2.94663484e-14,
+      3936.26669, -6.62430927]
+  transport:
+    model: gas
+    geometry: nonlinear
+    well-depth: 280.8
+    diameter: 3.971
+    rotational-relaxation: 1.5
+    note: NOx2018
+- name: C2H6(4)
+  composition: {C: 2, H: 6}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 954.51, 5000.0]
+    data:
+    - [3.78034587, -3.24276241e-03, 5.52385435e-05, -6.38587783e-08, 2.28640014e-11,
+      -1.16203414e+04, 5.21029695]
+    - [4.58979513, 0.0141508369, -4.75965817e-06, 8.60302994e-10, -6.21723919e-14,
+      -1.27217506e+04, -3.61718814]
+  transport:
+    model: gas
+    geometry: nonlinear
+    well-depth: 252.3
+    diameter: 4.302
+    rotational-relaxation: 1.5
+    note: NOx2018
+- name: C3H8(5)
+  composition: {C: 3, H: 8}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 986.57, 5000.0]
+    data:
+    - [3.05259496, 0.0125095908, 3.79398786e-05, -5.12038671e-08, 1.8707212e-11,
+      -1.4454178e+04, 10.0671424]
+    - [5.91305151, 0.0218764454, -8.17671846e-06, 1.49857145e-09, -1.05993529e-13,
+      -1.60388316e+04, -8.86492585]
+  transport:
+    model: gas
+    geometry: nonlinear
+    well-depth: 266.8
+    diameter: 4.982
+    rotational-relaxation: 1.0
+    note: NIST_Fluorine
+- name: C3H6(6)
+  composition: {C: 3, H: 6}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 988.01, 5000.0]
+    data:
+    - [3.30973189, 8.27538925e-03, 3.37700261e-05, -4.39287639e-08, 1.58763418e-11,
+      767.477289, 9.64363608]
+    - [5.41219883, 0.0172863302, -6.51343593e-06, 1.20319014e-09, -8.55894064e-14,
+      -503.241836, -4.80240299]
+  transport:
+    model: gas
+    geometry: nonlinear
+    well-depth: 266.8
+    diameter: 4.982
+    rotational-relaxation: 1.0
+    note: NIST_Fluorine
+- name: CH4(7)
+  composition: {C: 1, H: 4}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 1084.11, 5000.0]
+    data:
+    - [4.20542251, -5.35565728e-03, 2.51126081e-05, -2.13766311e-08, 5.97537841e-12,
+      -1.01619436e+04, -0.921305463]
+    - [0.908223862, 0.0114541548, -4.57177717e-06, 8.29200705e-10, -5.66322293e-14,
+      -9719.9561, 13.9933316]
+  transport:
+    model: gas
+    geometry: nonlinear
+    well-depth: 141.4
+    diameter: 3.746
+    polarizability: 2.6
+    rotational-relaxation: 13.0
+    note: NOx2018
+- name: CH3(8)
+  composition: {C: 1, H: 3}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 1337.63, 5000.0]
+    data:
+    - [3.9154676, 1.84154328e-03, 3.48741744e-06, -3.32747591e-09, 8.49956827e-13,
+      1.62856394e+04, 0.351741508]
+    - [3.54145756, 4.76786822e-03, -1.82148419e-06, 3.28876573e-10, -2.22545583e-14,
+      1.62239579e+04, 1.66034925]
+  transport:
+    model: gas
+    geometry: nonlinear
+    well-depth: 144.0
+    diameter: 3.8
+    note: NOx2018
+- name: CH2(9)
+  composition: {C: 1, H: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 1104.6, 5000.0]
+    data:
+    - [4.01192387, -1.54978718e-04, 3.26297829e-06, -2.40421835e-09, 5.69496819e-13,
+      4.58676802e+04, 0.533200507]
+    - [3.14983387, 2.96674257e-03, -9.76055828e-07, 1.54115275e-10, -9.50338074e-15,
+      4.6058139e+04, 4.77807663]
+  transport:
+    model: gas
+    geometry: nonlinear
+    well-depth: 144.0
+    diameter: 3.8
+    note: NOx2018
+- name: C6H6(10)
+  composition: {C: 6, H: 6}
+  thermo:
+    model: NASA7
+    temperature-ranges: [200.0, 880.42, 3200.0]
+    data:
+    - [-2.34956, 0.0426033, 4.18859e-06, -3.77183e-08, 1.85245e-11, 8835.36,
+      33.1038]
+    - [2.44278, 0.0393145, -2.16999e-05, 5.73056e-09, -5.84085e-13, 7275.11,
+      6.52533]
+  transport:
+    model: gas
+    geometry: nonlinear
+    well-depth: 438.897
+    diameter: 5.913
+    note: Epsilon & sigma estimated with Tc=570.00 K, Pc=40.06 bar (from
+      Joback method)
+- name: H2(11)
+  composition: {H: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 1959.09, 5000.0]
+    data:
+    - [3.4353644, 2.12707911e-04, -2.78619503e-07, 3.40262821e-10, -7.76021238e-14,
+      -1031.35986, -3.9084184]
+    - [2.78813643, 5.87679141e-04, 1.58992534e-07, -5.52703135e-11, 4.34284824e-15,
+      -596.126922, 0.112906945]
+  transport:
+    model: gas
+    geometry: linear
+    well-depth: 59.7
+    diameter: 2.833
+    note: PrimaryTransportLibrary
+- name: H(12)
+  composition: {H: 1}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 3598.76, 5000.0]
+    data:
+    - [2.5, 3.42688054e-15, -5.0200151e-18, 2.41314425e-21, -3.57117747e-25,
+      2.54742178e+04, -0.444972896]
+    - [2.49999999, 6.28554796e-12, -2.38962426e-15, 4.00838559e-19, -2.50257052e-23,
+      2.54742178e+04, -0.444972858]
+  transport:
+    model: gas
+    geometry: atom
+    well-depth: 145.0
+    diameter: 2.05
+    note: NOx2018
+- name: '[CH2]CC(15)'
+  composition: {C: 3, H: 7}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 995.41, 5000.0]
+    data:
+    - [3.09191332, 0.0132172438, 2.75847696e-05, -3.90849011e-08, 1.43313375e-11,
+      1.02284117e+04, 12.4057862]
+    - [5.69430859, 0.0196033422, -7.42049765e-06, 1.35882984e-09, -9.56215118e-14,
+      8875.84876, -4.32889216]
+  transport:
+    model: gas
+    geometry: nonlinear
+    well-depth: 266.8
+    diameter: 4.982
+    rotational-relaxation: 1.0
+    note: NIST_Fluorine
+- name: '[CH2]CCC(16)'
+  composition: {C: 4, H: 9}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 1048.11, 5000.0]
+    data:
+    - [2.34847956, 0.0291324211, 9.83641679e-06, -2.60506002e-08, 1.01150991e-11,
+      7395.26561, 17.3201944]
+    - [7.21574878, 0.0270036509, -1.06547117e-05, 1.95471785e-09, -1.35977656e-13,
+      5471.62394, -10.6997321]
+  transport:
+    model: gas
+    geometry: nonlinear
+    well-depth: 357.002
+    diameter: 5.176
+    rotational-relaxation: 1.0
+    note: GRI-Mech
+- name: C[CH2](17)
+  composition: {C: 2, H: 5}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 900.3, 5000.0]
+    data:
+    - [3.82189084, -3.43429537e-03, 5.09283594e-05, -6.20248997e-08, 2.37090838e-11,
+      1.30660106e+04, 7.61623965]
+    - [5.15606348, 9.43148131e-03, -1.81961107e-06, 2.21232105e-10, -1.43511839e-14,
+      1.20641409e+04, -2.91017391]
+  transport:
+    model: gas
+    geometry: nonlinear
+    well-depth: 252.3
+    diameter: 4.302
+    rotational-relaxation: 1.5
+    note: NOx2018
+- name: CC[CH]CCC(18)
+  composition: {C: 6, H: 13}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 2003.8, 5000.0]
+    data:
+    - [1.33686495, 0.0573244259, -2.58737798e-05, 4.74281001e-09, -2.39012649e-13,
+      408.839014, 26.2441745]
+    - [17.0742953, 0.0329275412, -1.28645403e-05, 2.16253783e-09, -1.35165249e-13,
+      -7307.09233, -64.1338719]
+  transport:
+    model: gas
+    geometry: nonlinear
+    well-depth: 385.187
+    diameter: 6.051
+    note: Epsilon & sigma estimated with Tc=500.24 K, Pc=32.8 bar (from
+      Joback method)
+- name: C[CH]CCCC(20)
+  composition: {C: 6, H: 13}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 1919.37, 5000.0]
+    data:
+    - [1.10039479, 0.0591157337, -2.83095584e-05, 5.96597722e-09, -4.29269905e-13,
+      418.933858, 27.2710365]
+    - [15.9929648, 0.0337709224, -1.29504161e-05, 2.17613937e-09, -1.36870612e-13,
+      -6346.31659, -57.0179687]
+  transport:
+    model: gas
+    geometry: nonlinear
+    well-depth: 385.187
+    diameter: 6.051
+    note: Epsilon & sigma estimated with Tc=500.24 K, Pc=32.8 bar (from
+      Joback method)
+- name: C4H8(23)
+  composition: {C: 4, H: 8}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 991.8, 5000.0]
+    data:
+    - [2.64173322, 0.0203703028, 3.05806145e-05, -4.8555313e-08, 1.85229051e-11,
+      -1929.80782, 14.9537587]
+    - [7.80838895, 0.0229240518, -8.65883031e-06, 1.60049538e-09, -1.13876346e-13,
+      -4105.1189, -15.7296686]
+  transport:
+    model: gas
+    geometry: nonlinear
+    well-depth: 357.002
+    diameter: 5.176
+    rotational-relaxation: 1.0
+    note: GRI-Mech
+- name: '[CH2]C[CH2](25)'
+  composition: {C: 3, H: 6}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 1011.02, 5000.0]
+    data:
+    - [3.13019227, 0.0139358408, 1.71985251e-05, -2.69377431e-08, 9.94956587e-12,
+      3.49110472e+04, 13.3619414]
+    - [5.48781696, 0.0173101008, -6.6529456e-06, 1.21645982e-09, -8.50344734e-14,
+      3.3785152e+04, -1.24856189]
+  transport:
+    model: gas
+    geometry: nonlinear
+    well-depth: 329.271
+    diameter: 5.092
+    note: Epsilon & sigma estimated with Tc=427.62 K, Pc=47.04 bar (from
+      Joback method)
+- name: '[CH2]C[CH]C(26)'
+  composition: {C: 4, H: 8}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 1492.36, 5000.0]
+    data:
+    - [2.59221888, 0.0286124246, -6.18637855e-06, -3.09349047e-09, 1.21714108e-12,
+      3.07686712e+04, 19.1945386]
+    - [6.22727746, 0.0257400121, -1.02050923e-05, 1.78669934e-09, -1.17175185e-13,
+      2.89186028e+04, -2.36124395]
+  transport:
+    model: gas
+    geometry: nonlinear
+    well-depth: 348.415
+    diameter: 5.415
+    note: Epsilon & sigma estimated with Tc=452.49 K, Pc=41.41 bar (from
+      Joback method)
+- name: C2H3(32)
+  composition: {C: 2, H: 3}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 931.97, 5000.0]
+    data:
+    - [3.90668052, -4.06210176e-03, 3.86768549e-05, -4.62960514e-08, 1.72893161e-11,
+      3.47971793e+04, 6.0979782]
+    - [5.44804183, 4.98342858e-03, -1.08812991e-06, 1.79818703e-10, -1.45080716e-14,
+      3.38297435e+04, -4.87851009]
+  transport:
+    model: gas
+    geometry: nonlinear
+    well-depth: 209.0
+    diameter: 4.1
+    rotational-relaxation: 1.0
+    note: NOx2018
+- name: C[CH]C(36)
+  composition: {C: 3, H: 7}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 1100.3, 5000.0]
+    data:
+    - [3.21174698, 0.0131075153, 1.99173553e-05, -2.55877563e-08, 8.25847369e-12,
+      8907.9232, 11.8466459]
+    - [3.65557537, 0.0230584418, -9.41371376e-06, 1.73592453e-09, -1.20102268e-13,
+      8110.22493, 6.48192623]
+  transport:
+    model: gas
+    geometry: nonlinear
+    well-depth: 266.801
+    diameter: 4.982
+    rotational-relaxation: 1.0
+    note: GRI-Mech
+- name: C3H5(37)
+  composition: {C: 3, H: 5}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 952.02, 5000.0]
+    data:
+    - [3.31921588, 5.66592128e-03, 4.27410459e-05, -5.78778943e-08, 2.21675152e-11,
+      1.89906208e+04, 9.19676439]
+    - [7.55743954, 0.0114806149, -3.63923624e-06, 6.63515499e-10, -4.95260968e-14,
+      1.71131645e+04, -16.663979]
+  transport:
+    model: gas
+    geometry: nonlinear
+    well-depth: 260.001
+    diameter: 4.85
+    rotational-relaxation: 1.0
+    note: GRI-Mech
+- name: C3H5(39)
+  composition: {C: 3, H: 5}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 997.88, 5000.0]
+    data:
+    - [3.23406846, 0.011820986, 1.70300262e-05, -2.64359234e-08, 9.91188097e-12,
+      3.04873071e+04, 10.3183251]
+    - [5.66476446, 0.0144325192, -5.46732732e-06, 1.00156664e-09, -7.04849534e-14,
+      2.93870629e+04, -4.48542309]
+  transport:
+    model: gas
+    geometry: nonlinear
+    well-depth: 260.001
+    diameter: 4.85
+    rotational-relaxation: 1.0
+    note: GRI-Mech
+- name: C[C]C(40)
+  composition: {C: 3, H: 6}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 1330.24, 5000.0]
+    data:
+    - [2.92363268, 0.0210869368, -1.82390482e-06, -5.3595614e-09, 1.86097496e-12,
+      3.71014625e+04, 19.8374355]
+    - [5.20764948, 0.0205522149, -8.36242983e-06, 1.49634874e-09, -1.00128744e-13,
+      3.59334566e+04, 6.06041902]
+  transport:
+    model: gas
+    geometry: nonlinear
+    well-depth: 237.1
+    diameter: 5.118
+    note: Epsilon & sigma estimated with fixed Lennard Jones Parameters.
+      This is the fallback method! Try improving transport databases!
+- name: C5H10(55)
+  composition: {C: 5, H: 10}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 1027.62, 5000.0]
+    data:
+    - [1.90148517, 0.0362537615, 1.29127627e-05, -3.55760958e-08, 1.43065123e-11,
+      -4763.09637, 19.8563815]
+    - [9.28071657, 0.0304041015, -1.19375041e-05, 2.2066257e-09, -1.55065977e-13,
+      -7487.44332, -21.8215987]
+  transport:
+    model: gas
+    geometry: nonlinear
+    well-depth: 367.083
+    diameter: 5.533
+    note: Epsilon & sigma estimated with Tc=476.73 K, Pc=40.88 bar (from
+      Joback method)
+- name: C[C]CCC(78)
+  composition: {C: 5, H: 10}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 2216.65, 5000.0]
+    data:
+    - [1.74831387, 0.0494323619, -2.57683459e-05, 6.32371895e-09, -6.20562823e-13,
+      3.14207259e+04, 29.2252054]
+    - [13.8276955, 0.0276345741, -1.10176874e-05, 1.88734777e-09, -1.20210856e-13,
+      2.60656334e+04, -38.6658457]
+  transport:
+    model: gas
+    geometry: nonlinear
+    well-depth: 341.1
+    diameter: 5.784
+    note: Epsilon & sigma estimated with fixed Lennard Jones Parameters.
+      This is the fallback method! Try improving transport databases!
+- name: C[C]CC(80)
+  composition: {C: 4, H: 8}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 1802.4, 5000.0]
+    data:
+    - [2.23551664, 0.0362127729, -1.62668717e-05, 2.77190495e-09, -6.63706464e-14,
+      3.42663128e+04, 25.2570347]
+    - [10.5022809, 0.022635588, -8.93642354e-06, 1.52850358e-09, -9.75174451e-14,
+      3.0511676e+04, -21.6443228]
+  transport:
+    model: gas
+    geometry: nonlinear
+    well-depth: 531.4
+    diameter: 4.687
+    note: Epsilon & sigma estimated with fixed Lennard Jones Parameters.
+      This is the fallback method! Try improving transport databases!
+- name: C5H10(81)
+  composition: {C: 5, H: 10}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 1059.78, 5000.0]
+    data:
+    - [1.94608248, 0.0364832706, 8.35533477e-06, -2.83279482e-08, 1.11814756e-11,
+      -6238.66, 19.2592288]
+    - [8.36581152, 0.0318148354, -1.27245927e-05, 2.34966077e-09, -1.63923059e-13,
+      -8697.90539, -17.2678628]
+  transport:
+    model: gas
+    geometry: nonlinear
+    well-depth: 377.434
+    diameter: 5.608
+    note: Epsilon & sigma estimated with Tc=490.17 K, Pc=40.36 bar (from
+      Joback method)
+- name: C4H8(82)
+  composition: {C: 4, H: 8}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 1081.86, 5000.0]
+    data:
+    - [2.61746418, 0.0243420911, 1.17371149e-05, -2.399567e-08, 8.68002449e-12,
+      -3541.51371, 13.2442409]
+    - [5.99492391, 0.0261387151, -1.05589064e-05, 1.9478752e-09, -1.3528371e-13,
+      -5108.23351, -7.17918742]
+  transport:
+    model: gas
+    geometry: nonlinear
+    well-depth: 359.053
+    diameter: 5.289
+    note: Epsilon & sigma estimated with Tc=466.30 K, Pc=45.78 bar (from
+      Joback method)
+- name: CC[C]CC(90)
+  composition: {C: 5, H: 10}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 2216.65, 5000.0]
+    data:
+    - [1.74831387, 0.0494323619, -2.57683459e-05, 6.32371895e-09, -6.20562823e-13,
+      3.14207259e+04, 28.5320582]
+    - [13.8276955, 0.0276345741, -1.10176874e-05, 1.88734777e-09, -1.20210856e-13,
+      2.60656334e+04, -39.3589928]
+  transport:
+    model: gas
+    geometry: nonlinear
+    well-depth: 341.1
+    diameter: 5.784
+    note: Epsilon & sigma estimated with fixed Lennard Jones Parameters.
+      This is the fallback method! Try improving transport databases!
+- name: '[CH]1CC1(94)'
+  composition: {C: 3, H: 5}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 957.48, 5000.0]
+    data:
+    - [3.87191565, -8.4206474e-03, 7.51070555e-05, -8.62291489e-08, 3.09447076e-11,
+      3.22459903e+04, 9.72019325]
+    - [5.62886374, 0.0132931227, -4.42602261e-06, 8.39196551e-10, -6.38159269e-14,
+      3.05777748e+04, -5.63428322]
+  transport:
+    model: gas
+    geometry: nonlinear
+    well-depth: 351.793
+    diameter: 5.289
+    note: Epsilon & sigma estimated with Tc=456.87 K, Pc=44.86 bar (from
+      Joback method)
+- name: C6H10(112)
+  composition: {C: 6, H: 10}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 1029.51, 5000.0]
+    data:
+    - [1.48891724, 0.0441328215, 5.49892118e-06, -3.28730173e-08, 1.4107045e-11,
+      7761.34865, 23.3629283]
+    - [11.1942063, 0.0314218986, -1.24028549e-05, 2.3046637e-09, -1.6263102e-13,
+      4438.29031, -30.1755012]
+  transport:
+    model: gas
+    geometry: nonlinear
+    well-depth: 385.401
+    diameter: 5.648
+    note: Epsilon & sigma estimated with Tc=500.52 K, Pc=40.36 bar (from
+      Joback method)
+- name: C2H2(133)
+  composition: {C: 2, H: 2}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 1423.28, 5000.0]
+    data:
+    - [3.69251553, 6.06585701e-03, -2.11280343e-06, 1.63807764e-11, 1.07656783e-13,
+      4.81741497e+04, 3.96842713]
+    - [4.43043874, 4.87754616e-03, -1.79372998e-06, 3.04082212e-10, -1.96649662e-14,
+      4.78744009e+04, -0.167184378]
+  transport:
+    model: gas
+    geometry: nonlinear
+    well-depth: 209.0
+    diameter: 4.1
+    rotational-relaxation: 2.5
+    note: NOx2018
+- name: C6H10(145)
+  composition: {C: 6, H: 10}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 1805.85, 5000.0]
+    data:
+    - [1.32690997, 0.0574339345, -3.37024221e-05, 9.8079761e-09, -1.18018725e-12,
+      4.39455825e+04, 33.4556486]
+    - [12.1439467, 0.0334742028, -1.38008738e-05, 2.46098926e-09, -1.63088959e-13,
+      4.00387513e+04, -25.1236255]
+  transport:
+    model: gas
+    geometry: nonlinear
+    well-depth: 399.3
+    diameter: 5.949
+    note: Epsilon & sigma estimated with fixed Lennard Jones Parameters.
+      This is the fallback method! Try improving transport databases!
+- name: C6H10(157)
+  composition: {C: 6, H: 10}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 1054.99, 5000.0]
+    data:
+    - [1.5334423, 0.0442531971, 1.42917207e-06, -2.63447282e-08, 1.12937294e-11,
+      6438.58879, 23.4860021]
+    - [10.354807, 0.0326291614, -1.30708621e-05, 2.42483837e-09, -1.69976823e-13,
+      3362.89262, -25.2997459]
+  transport:
+    model: gas
+    geometry: nonlinear
+    well-depth: 395.658
+    diameter: 5.721
+    note: Epsilon & sigma estimated with Tc=513.84 K, Pc=39.86 bar (from
+      Joback method)
+- name: C6H10(175)
+  composition: {C: 6, H: 10}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 1462.8, 5000.0]
+    data:
+    - [1.63200947, 0.0569793436, -3.43190829e-05, 1.0792285e-08, -1.50187151e-12,
+      4.37929506e+04, 31.6810455]
+    - [7.45611825, 0.0410534388, -1.79881868e-05, 3.34953548e-09, -2.29868744e-13,
+      4.20890478e+04, 1.36786807]
+  transport:
+    model: gas
+    geometry: nonlinear
+    well-depth: 399.3
+    diameter: 5.949
+    note: Epsilon & sigma estimated with fixed Lennard Jones Parameters.
+      This is the fallback method! Try improving transport databases!
+- name: C6H10(176)
+  composition: {C: 6, H: 10}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 986.72, 5000.0]
+    data:
+    - [1.63235836, 0.0573540732, -3.79955649e-05, 1.5559438e-08, -3.21164453e-12,
+      4.23205801e+04, 31.2726838]
+    - [4.41144477, 0.0460881338, -2.08692456e-05, 3.98824475e-09, -2.79917561e-13,
+      4.17721432e+04, 17.9023473]
+  transport:
+    model: gas
+    geometry: nonlinear
+    well-depth: 399.3
+    diameter: 5.949
+    note: Epsilon & sigma estimated with fixed Lennard Jones Parameters.
+      This is the fallback method! Try improving transport databases!
+- name: C6H10(182)
+  composition: {C: 6, H: 10}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 1025.19, 5000.0]
+    data:
+    - [1.31146861, 0.0489832084, -6.8399336e-06, -2.19040403e-08, 1.08080128e-11,
+      2735.95516, 20.5648529]
+    - [11.7196127, 0.0303322075, -1.16796339e-05, 2.13616711e-09, -1.49308022e-13,
+      -552.044778, -35.5352824]
+  transport:
+    model: gas
+    geometry: nonlinear
+    well-depth: 406.008
+    diameter: 5.795
+    note: Epsilon & sigma estimated with Tc=527.28 K, Pc=39.36 bar (from
+      Joback method)
+- name: C6H10(185)
+  composition: {C: 6, H: 10}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 977.76, 5000.0]
+    data:
+    - [1.33938913, 0.0449406545, 1.23904566e-05, -4.71832495e-08, 2.10595996e-11,
+      4347.52876, 22.2630189]
+    - [13.6767267, 0.0268897357, -9.65482009e-06, 1.76044945e-09, -1.25619681e-13,
+      385.193154, -44.9049963]
+  transport:
+    model: gas
+    geometry: nonlinear
+    well-depth: 395.658
+    diameter: 5.721
+    note: Epsilon & sigma estimated with Tc=513.84 K, Pc=39.86 bar (from
+      Joback method)
+- name: C6H10(188)
+  composition: {C: 6, H: 10}
+  thermo:
+    model: NASA7
+    temperature-ranges: [100.0, 955.72, 5000.0]
+    data:
+    - [2.04033399, 0.0215853002, 8.25932599e-05, -1.21171047e-07, 4.7520855e-11,
+      9827.69704, 18.2529354]
+    - [14.1849101, 0.0250441622, -8.04088292e-06, 1.48719505e-09, -1.12027745e-13,
+      5027.02801, -52.7585346]
+  transport:
+    model: gas
+    geometry: nonlinear
+    well-depth: 408.187
+    diameter: 5.936
+    note: Epsilon & sigma estimated with Tc=530.11 K, Pc=36.82 bar (from
+      Joback method)
+
+reactions:
+- equation: H(12) + H(12) <=> H2(11)  # Reaction 1
+  rate-constant: {A: 5.45e+10, b: 0.0, Ea: 1.5}
+- equation: C[CH2](17) + [CH2]CCC(16) <=> C6H14(1)  # Reaction 2
+  rate-constant: {A: 3.18795e+16, b: -1.177, Ea: 0.0}
+- equation: C2H4(3) + C[CH2](17) <=> [CH2]CCC(16)  # Reaction 3
+  rate-constant: {A: 36.28, b: 2.997, Ea: 6.866}
+- equation: CH2(9) + CH3(8) <=> C[CH2](17)  # Reaction 4
+  rate-constant: {A: 4.172519e+11, b: 0.574, Ea: -0.027}
+- equation: H(12) + C2H4(3) <=> C[CH2](17)  # Reaction 5
+  rate-constant: {A: 4.62e+08, b: 1.64, Ea: 1.01}
+- equation: H(12) + C2H6(4) <=> H2(11) + C[CH2](17)  # Reaction 6
+  rate-constant: {A: 1.15e+08, b: 1.9, Ea: 7.53}
+- equation: H(12) + C[CH2](17) <=> H2(11) + C2H4(3)  # Reaction 7
+  rate-constant: {A: 1.083e+13, b: 0.0, Ea: 0.0}
+- equation: H(12) + C[CH2](17) <=> C2H6(4)  # Reaction 8
+  rate-constant: {A: 1.0e+14, b: 0.0, Ea: 0.0}
+- equation: C[CH2](17) + C[CH2](17) <=> C2H4(3) + C2H6(4)  # Reaction 9
+  rate-constant: {A: 6.9e+13, b: -0.35, Ea: 0.0}
+- equation: '[CH2]CC(15) + [CH2]CC(15) <=> C6H14(1)'  # Reaction 10
+  rate-constant: {A: 1.593975e+16, b: -1.177, Ea: 0.0}
+- equation: CH2(9) + [CH2]CC(15) <=> [CH2]CCC(16)  # Reaction 11
+  rate-constant: {A: 4.172519e+11, b: 0.574, Ea: -0.027}
+- equation: CH3(8) + CH3(8) <=> C2H6(4)  # Reaction 12
+  rate-constant: {A: 9.45e+14, b: -0.538, Ea: 0.135}
+- equation: H(12) + CH2(9) <=> CH3(8)  # Reaction 13
+  rate-constant: {A: 1.0e+13, b: 0.0, Ea: 0.0}
+- equation: CH2(9) + C[CH2](17) <=> [CH2]CC(15)  # Reaction 14
+  rate-constant: {A: 4.172519e+11, b: 0.574, Ea: -0.027}
+- equation: '[CH2]CC(15) <=> H(12) + C3H6(6)'  # Reaction 15
+  rate-constant: {A: 9.95e+30, b: -5.3, Ea: 43.0}
+- equation: CH3(8) + C2H4(3) <=> [CH2]CC(15)  # Reaction 16
+  rate-constant: {A: 861.0, b: 2.988, Ea: 7.238}
+- equation: C[CH2](17) + C3H8(5) <=> C2H6(4) + [CH2]CC(15)  # Reaction 17
+  rate-constant: {A: 5.52e-03, b: 4.34, Ea: 9.2}
+- equation: H(12) + CH4(7) <=> H2(11) + CH3(8)  # Reaction 18
+  rate-constant: {A: 4100.0, b: 3.156, Ea: 8.755}
+- equation: H(12) + C3H8(5) <=> H2(11) + [CH2]CC(15)  # Reaction 19
+  rate-constant: {A: 1.663824e+04, b: 2.718, Ea: 6.496}
+- equation: H(12) + [CH2]CC(15) <=> H2(11) + C3H6(6)  # Reaction 20
+  rate-constant: {A: 3.62e+12, b: 0.0, Ea: 0.0}
+- equation: H(12) + [CH2]CC(15) <=> C3H8(5)  # Reaction 21
+  rate-constant: {A: 9.17499e+13, b: 0.115, Ea: 0.0}
+- equation: C[CH2](17) + [CH2]CC(15) <=> C2H6(4) + C3H6(6)  # Reaction 22
+  rate-constant: {A: 2.9e+12, b: 0.0, Ea: 0.0}
+- equation: C[CH2](17) + [CH2]CC(15) <=> C2H4(3) + C3H8(5)  # Reaction 23
+  rate-constant: {A: 6.87e+13, b: -0.35, Ea: 0.0}
+- equation: '[CH2]CC(15) + [CH2]CC(15) <=> C3H6(6) + C3H8(5)'  # Reaction 24
+  rate-constant: {A: 2.9e+12, b: 0.0, Ea: 0.0}
+- equation: H(12) + C[CH]CCCC(20) <=> C6H14(1)  # Reaction 25
+  rate-constant: {A: 1.76637e+13, b: 0.153, Ea: 0.0}
+- equation: H(12) + C6H14(1) <=> H2(11) + C[CH]CCCC(20)  # Reaction 26
+  rate-constant: {A: 127.65, b: 3.68, Ea: 4.7}
+- equation: C[CH2](17) + C6H14(1) <=> C2H6(4) + C[CH]CCCC(20)  # Reaction 27
+  rate-constant: {A: 4.327734e-03, b: 4.29, Ea: 7.536}
+- equation: C[CH2](17) + C[CH]CCCC(20) <=> C2H4(3) + C6H14(1)  # Reaction 28
+  rate-constant: {A: 2.330481e+15, b: -0.9, Ea: 0.0}
+- equation: '[CH2]CC(15) + C6H14(1) <=> C3H8(5) + C[CH]CCCC(20)'  # Reaction 29
+  rate-constant: {A: 4.327734e-03, b: 4.29, Ea: 7.536}
+- equation: CH3(8) + C[CH2](17) <=> C3H8(5)  # Reaction 30
+  rate-constant: {A: 1.23e+15, b: -0.562, Ea: 0.021}
+- equation: H(12) + CH3(8) <=> CH4(7)  # Reaction 31
+  rate-constant: {A: 1.93e+14, b: 0.0, Ea: 0.27}
+- equation: C[CH]CCCC(20) <=> C3H6(6) + [CH2]CC(15)  # Reaction 32
+  rate-constant: {A: 1.77e+29, b: -4.6, Ea: 38.21}
+- equation: '[CH2]CC(15) + C[CH]CCCC(20) <=> C3H6(6) + C6H14(1)'  # Reaction 33
+  rate-constant: {A: 2.1053e+14, b: -0.55, Ea: 0.0}
+- equation: CH3(8) + C6H14(1) <=> CH4(7) + C[CH]CCCC(20)  # Reaction 34
+  rate-constant: {A: 0.03212, b: 4.34, Ea: 6.61}
+- equation: CH3(8) + C[CH2](17) <=> CH4(7) + C2H4(3)  # Reaction 35
+  rate-constant: {A: 6.57e+14, b: -0.68, Ea: 0.0}
+- equation: CH2(9) + C[CH2](17) <=> CH3(8) + C2H4(3)  # Reaction 36
+  rate-constant: {A: 9.03e+13, b: 0.0, Ea: 0.0}
+- equation: CH3(8) + C2H6(4) <=> CH4(7) + C[CH2](17)  # Reaction 37
+  rate-constant: {A: 35.0, b: 3.44, Ea: 10.384}
+- equation: CH3(8) + [CH2]CC(15) <=> CH4(7) + C3H6(6)  # Reaction 38
+  rate-constant: {A: 2.3e+13, b: -0.32, Ea: 0.0}
+- equation: CH2(9) + [CH2]CC(15) <=> CH3(8) + C3H6(6)  # Reaction 39
+  rate-constant: {A: 3.62e+12, b: 0.0, Ea: 0.0}
+- equation: CH2(9) + CH4(7) <=> CH3(8) + CH3(8)  # Reaction 40
+  rate-constant: {A: 8.532853e+08, b: 1.282, Ea: 10.856}
+- equation: H2(11) + CH2(9) <=> H(12) + CH3(8)  # Reaction 41
+  rate-constant: {A: 3.972449e+08, b: 1.18, Ea: 12.851}
+- equation: CH2(9) + C6H14(1) <=> CH3(8) + C[CH]CCCC(20)  # Reaction 42
+  rate-constant: {A: 3.02, b: 3.46, Ea: 7.47}
+- equation: H(12) + CC[CH]CCC(18) <=> C6H14(1)  # Reaction 43
+  rate-constant: {A: 1.76637e+13, b: 0.153, Ea: 0.0}
+- equation: H(12) + C6H14(1) <=> H2(11) + CC[CH]CCC(18)  # Reaction 44
+  rate-constant: {A: 127.65, b: 3.68, Ea: 4.7}
+- equation: C[CH2](17) + C6H14(1) <=> C2H6(4) + CC[CH]CCC(18)  # Reaction 45
+  rate-constant: {A: 4.327734e-03, b: 4.29, Ea: 7.536}
+- equation: C[CH2](17) + CC[CH]CCC(18) <=> C2H4(3) + C6H14(1)  # Reaction 46
+  rate-constant: {A: 2.330481e+15, b: -0.9, Ea: 0.0}
+- equation: '[CH2]CC(15) + C6H14(1) <=> C3H8(5) + CC[CH]CCC(18)'  # Reaction 47
+  rate-constant: {A: 4.327734e-03, b: 4.29, Ea: 7.536}
+- equation: CC[CH]CCC(18) <=> C[CH]CCCC(20)  # Reaction 48
+  duplicate: true
+  rate-constant: {A: 6.76e+09, b: 0.88, Ea: 38.0}
+- equation: CC[CH]CCC(18) <=> C[CH]CCCC(20)  # Reaction 49
+  duplicate: true
+  rate-constant: {A: 6.76e+09, b: 0.88, Ea: 38.0}
+- equation: '[CH2]CC(15) + CC[CH]CCC(18) <=> C3H6(6) + C6H14(1)'  # Reaction 50
+  rate-constant: {A: 2.1053e+14, b: -0.55, Ea: 0.0}
+- equation: CH3(8) + C6H14(1) <=> CH4(7) + CC[CH]CCC(18)  # Reaction 51
+  rate-constant: {A: 0.03212, b: 4.34, Ea: 6.61}
+- equation: CC[CH]CCC(18) + C6H14(1) <=> C[CH]CCCC(20) + C6H14(1)  # Reaction 52
+  rate-constant: {A: 5.147495e-03, b: 4.29, Ea: 7.713}
+- equation: CC[CH]CCC(18) <=> C[CH]CCCC(20)  # Reaction 53
+  duplicate: true
+  rate-constant: {A: 6.76e+09, b: 0.88, Ea: 38.0}
+- equation: CC[CH]CCC(18) <=> C[CH]CCCC(20)  # Reaction 54
+  duplicate: true
+  rate-constant: {A: 1.1e+09, b: 1.01, Ea: 36.4}
+- equation: C5H10(55) <=> C2H4(3) + C3H6(6)  # Reaction 55
+  rate-constant: {A: 8.7e+11, b: 0.0, Ea: 55.688}
+- equation: CH3(8) + C5H10(55) <=> CC[CH]CCC(18)  # Reaction 56
+  rate-constant: {A: 607.5, b: 2.969, Ea: 6.95}
+- equation: C[C]CCC(78) <=> C5H10(55)  # Reaction 57
+  rate-constant: {A: 2.453877e+17, b: -1.28, Ea: -4.941}
+- equation: C[C]CCC(78) <=> C5H10(81)  # Reaction 58
+  rate-constant: {A: 2.104535e+14, b: -0.279, Ea: 9.353}
+- equation: CC[C]CC(90) <=> C5H10(81)  # Reaction 59
+  rate-constant: {A: 3.271835e+17, b: -1.28, Ea: -4.941}
+- equation: C[C]C(40) <=> C3H6(6)  # Reaction 60
+  rate-constant: {A: 1.939838e+17, b: -0.971, Ea: 14.588}
+- equation: H(12) + C3H5(37) <=> C3H6(6)  # Reaction 61
+  rate-constant: {A: 5.84e+13, b: 0.18, Ea: 0.124}
+- equation: C[CH2](17) + C3H5(37) <=> C2H4(3) + C3H6(6)  # Reaction 62
+  rate-constant: {A: 1.374e+14, b: -0.35, Ea: -0.13}
+- equation: C3H5(37) + [CH2]CC(15) <=> C3H6(6) + C3H6(6)  # Reaction 63
+  rate-constant: {A: 5.8e+12, b: 0.0, Ea: -0.13}
+- equation: CH3(8) + C3H6(6) <=> CH4(7) + C3H5(37)  # Reaction 64
+  rate-constant: {A: 0.072, b: 4.25, Ea: 7.53}
+- equation: H(12) + C3H6(6) <=> H2(11) + C3H5(37)  # Reaction 65
+  rate-constant: {A: 3360.0, b: 3.14, Ea: 4.29}
+- equation: C3H6(6) + C[CH]CCCC(20) <=> C3H5(37) + C6H14(1)  # Reaction 66
+  rate-constant: {A: 9.781927e-04, b: 4.26, Ea: 6.64}
+- equation: C2H6(4) + C3H5(37) <=> C[CH2](17) + C3H6(6)  # Reaction 67
+  rate-constant: {A: 0.1752, b: 4.34, Ea: 19.7}
+- equation: C[CH2](17) + C3H5(37) <=> C5H10(55)  # Reaction 68
+  rate-constant: {A: 4.1e+13, b: 0.0, Ea: -0.13}
+- equation: C3H6(6) + CC[CH]CCC(18) <=> C3H5(37) + C6H14(1)  # Reaction 69
+  rate-constant: {A: 9.781927e-04, b: 4.26, Ea: 6.64}
+- equation: CH2(9) + C3H6(6) <=> CH3(8) + C3H5(37)  # Reaction 70
+  rate-constant: {A: 3701.199, b: 2.824, Ea: 6.545}
+- equation: C3H5(37) <=> [CH]1CC1(94)  # Reaction 71
+  rate-constant: {A: 6.95187e+18, b: -1.628, Ea: 41.142}
+- equation: C[CH]C(36) <=> [CH2]CC(15)  # Reaction 72
+  rate-constant: {A: 4.86e+09, b: 1.32, Ea: 40.3}
+- equation: H(12) + C[CH]C(36) <=> C3H8(5)  # Reaction 73
+  rate-constant: {A: 2.0e+13, b: 0.0, Ea: 0.0}
+- equation: C[CH]C(36) + CC[CH]CCC(18) <=> C3H6(6) + C6H14(1)  # Reaction 74
+  rate-constant: {A: 3.0e+11, b: 0.0, Ea: 0.0}
+- equation: C[CH]C(36) + C[CH]CCCC(20) <=> C3H6(6) + C6H14(1)  # Reaction 75
+  rate-constant: {A: 3.0e+11, b: 0.0, Ea: 0.0}
+- equation: C[CH2](17) + C[CH]C(36) <=> C2H4(3) + C3H8(5)  # Reaction 76
+  rate-constant: {A: 6.33e+14, b: -0.7, Ea: 0.0}
+- equation: C[CH2](17) + C[CH]C(36) <=> C2H6(4) + C3H6(6)  # Reaction 77
+  rate-constant: {A: 3.0e+11, b: 0.0, Ea: 0.0}
+- equation: C3H5(37) + C[CH]C(36) <=> C3H6(6) + C3H6(6)  # Reaction 78
+  rate-constant: {A: 6.0e+11, b: 0.0, Ea: 0.0}
+- equation: CH3(8) + C[CH]C(36) <=> CH4(7) + C3H6(6)  # Reaction 79
+  rate-constant: {A: 3.0e+11, b: 0.0, Ea: 0.0}
+- equation: CH2(9) + C[CH]C(36) <=> CH3(8) + C3H6(6)  # Reaction 80
+  rate-constant: {A: 3.0e+11, b: 0.0, Ea: 0.0}
+- equation: H(12) + C[CH]C(36) <=> H2(11) + C3H6(6)  # Reaction 81
+  rate-constant: {A: 4.338e+13, b: 0.0, Ea: 2.536}
+- equation: H(12) + C3H6(6) <=> C[CH]C(36)  # Reaction 82
+  rate-constant: {A: 1.84e+09, b: 1.553, Ea: 1.57}
+- equation: C[CH]C(36) + [CH2]CC(15) <=> C3H6(6) + C3H8(5)  # Reaction 83
+  duplicate: true
+  rate-constant: {A: 5.13e+13, b: -0.35, Ea: 0.0}
+- equation: C[CH]C(36) + C[CH]C(36) <=> C3H6(6) + C3H8(5)  # Reaction 84
+  rate-constant: {A: 3.0e+11, b: 0.0, Ea: 0.0}
+- equation: C[CH]C(36) + [CH2]CC(15) <=> C3H6(6) + C3H8(5)  # Reaction 85
+  duplicate: true
+  rate-constant: {A: 5.13e+13, b: -0.35, Ea: 0.0}
+- equation: H2(11) + C[CH]C(36) <=> H(12) + C3H8(5)  # Reaction 86
+  rate-constant: {A: 5.42e-03, b: 4.34, Ea: 9.9}
+- equation: '[CH2]CCC(16) <=> H(12) + C4H8(23)'  # Reaction 87
+  rate-constant: {A: 1.86e+33, b: -5.98, Ea: 44.88}
+- equation: H(12) + [CH2]CCC(16) <=> H2(11) + C4H8(23)  # Reaction 88
+  rate-constant: {A: 3.62e+12, b: 0.0, Ea: 0.0}
+- equation: C[CH2](17) + [CH2]CCC(16) <=> C2H6(4) + C4H8(23)  # Reaction 89
+  rate-constant: {A: 3.9417e+12, b: -0.039, Ea: 0.0}
+- equation: C[CH2](17) + C4H8(23) <=> CC[CH]CCC(18)  # Reaction 90
+  rate-constant: {A: 7.15, b: 2.992, Ea: 6.26}
+- equation: CH3(8) + C3H5(37) <=> C4H8(23)  # Reaction 91
+  rate-constant: {A: 2.04e+14, b: -0.32, Ea: -0.13}
+- equation: '[CH2]CCC(16) + CC[CH]CCC(18) <=> C4H8(23) + C6H14(1)'  # Reaction 92
+  rate-constant: {A: 2.1053e+14, b: -0.55, Ea: 0.0}
+- equation: '[CH2]CCC(16) + C[CH]CCCC(20) <=> C4H8(23) + C6H14(1)'  # Reaction 93
+  rate-constant: {A: 2.1053e+14, b: -0.55, Ea: 0.0}
+- equation: C3H5(37) + [CH2]CCC(16) <=> C3H6(6) + C4H8(23)  # Reaction 94
+  rate-constant: {A: 5.8e+12, b: 0.0, Ea: 0.0}
+- equation: CH3(8) + [CH2]CCC(16) <=> CH4(7) + C4H8(23)  # Reaction 95
+  rate-constant: {A: 2.3e+13, b: -0.32, Ea: 0.0}
+- equation: CH2(9) + [CH2]CCC(16) <=> CH3(8) + C4H8(23)  # Reaction 96
+  rate-constant: {A: 3.62e+12, b: 0.0, Ea: 0.0}
+- equation: C[C]CC(80) <=> C4H8(23)  # Reaction 97
+  rate-constant: {A: 2.453877e+17, b: -1.28, Ea: -4.941}
+- equation: C[C]CC(80) <=> C4H8(82)  # Reaction 98
+  rate-constant: {A: 2.104535e+14, b: -0.279, Ea: 9.353}
+- equation: CH3(8) + [CH2]C[CH2](25) <=> [CH2]CCC(16)  # Reaction 99
+  rate-constant: {A: 6.3759e+16, b: -1.177, Ea: 0.0}
+- equation: H(12) + [CH2]C[CH2](25) <=> [CH2]CC(15)  # Reaction 100
+  rate-constant: {A: 1.834998e+14, b: 0.115, Ea: 0.0}
+- equation: C[CH2](17) + [CH2]C[CH2](25) <=> C2H4(3) + [CH2]CC(15)  # Reaction 101
+  rate-constant: {A: 1.374e+14, b: -0.35, Ea: 0.0}
+- equation: H(12) + [CH2]CC(15) <=> H2(11) + [CH2]C[CH2](25)  # Reaction 102
+  rate-constant: {A: 1.6e+13, b: 0.0, Ea: 8.174}
+- equation: C2H6(4) + [CH2]C[CH2](25) <=> C[CH2](17) + [CH2]CC(15)  # Reaction 103
+  rate-constant: {A: 6.521202e-04, b: 4.81, Ea: 8.49}
+- equation: '[CH2]C[CH2](25) + C3H8(5) <=> [CH2]CC(15) + [CH2]CC(15)'  # Reaction 104
+  rate-constant: {A: 6.521202e-04, b: 4.81, Ea: 8.49}
+- equation: '[CH2]C[CH2](25) <=> C3H6(6)'  # Reaction 105
+  rate-constant: {A: 7.796e+11, b: 0.486, Ea: 5.464}
+- equation: '[CH2]C[CH2](25) + CC[CH]CCC(18) <=> C3H5(37) + C6H14(1)'  # Reaction 106
+  rate-constant: {A: 4.72116e+13, b: -0.372, Ea: 0.0}
+- equation: '[CH2]C[CH2](25) + C[CH]CCCC(20) <=> C3H5(37) + C6H14(1)'  # Reaction 107
+  rate-constant: {A: 4.72116e+13, b: -0.372, Ea: 0.0}
+- equation: C[CH2](17) + [CH2]C[CH2](25) <=> C2H6(4) + C3H5(37)  # Reaction 108
+  rate-constant: {A: 1.262218e+13, b: -0.199, Ea: 0.0}
+- equation: C3H5(37) + [CH2]C[CH2](25) <=> C3H5(37) + C3H6(6)  # Reaction 109
+  rate-constant: {A: 2.524436e+13, b: -0.199, Ea: 0.0}
+- equation: CH3(8) + [CH2]C[CH2](25) <=> CH4(7) + C3H5(37)  # Reaction 110
+  rate-constant: {A: 1.191692e+10, b: 0.568, Ea: 0.0}
+- equation: CH2(9) + [CH2]C[CH2](25) <=> CH3(8) + C3H5(37)  # Reaction 111
+  rate-constant: {A: 1.191692e+10, b: 0.568, Ea: 0.0}
+- equation: H(12) + [CH2]C[CH2](25) <=> H2(11) + C3H5(37)  # Reaction 112
+  rate-constant: {A: 3.62e+12, b: 0.0, Ea: 0.0}
+- equation: H(12) + C3H5(37) <=> [CH2]C[CH2](25)  # Reaction 113
+  rate-constant: {A: 1.975241e+08, b: 1.537, Ea: 2.877}
+- equation: CH2(9) + C2H4(3) <=> [CH2]C[CH2](25)  # Reaction 114
+  rate-constant: {A: 8.84e+07, b: 1.55, Ea: -0.7}
+- equation: H(12) + C2H3(32) <=> C2H4(3)  # Reaction 115
+  rate-constant: {A: 1.21e+14, b: 0.0, Ea: 0.0}
+- equation: C2H3(32) + C[CH2](17) <=> C2H4(3) + C2H4(3)  # Reaction 116
+  rate-constant: {A: 4.56e+14, b: -0.7, Ea: 0.0}
+- equation: H(12) + C2H4(3) <=> H2(11) + C2H3(32)  # Reaction 117
+  rate-constant: {A: 240.0, b: 3.62, Ea: 11.266}
+- equation: C2H3(32) + C2H6(4) <=> C2H4(3) + C[CH2](17)  # Reaction 118
+  rate-constant: {A: 1.08e-03, b: 4.55, Ea: 3.5}
+- equation: C2H3(32) + C3H8(5) <=> C2H4(3) + [CH2]CC(15)  # Reaction 119
+  rate-constant: {A: 4.489187e-04, b: 4.71, Ea: 3.5}
+- equation: CH3(8) + C2H3(32) <=> C3H6(6)  # Reaction 120
+  rate-constant: {A: 7.23e+13, b: 0.0, Ea: 0.0}
+- equation: C2H3(32) + [CH2]CC(15) <=> C2H4(3) + C3H6(6)  # Reaction 121
+  rate-constant: {A: 2.42e+12, b: 0.0, Ea: 0.0}
+- equation: C2H3(32) + C[CH]C(36) <=> C2H4(3) + C3H6(6)  # Reaction 122
+  rate-constant: {A: 3.0e+11, b: 0.0, Ea: 0.0}
+- equation: CH4(7) + C2H3(32) <=> CH3(8) + C2H4(3)  # Reaction 123
+  rate-constant: {A: 0.02236, b: 4.34, Ea: 5.7}
+- equation: C2H3(32) + C6H14(1) <=> C2H4(3) + C[CH]CCCC(20)  # Reaction 124
+  rate-constant: {A: 9.176248, b: 3.67, Ea: 5.348}
+- equation: C2H3(32) + C6H14(1) <=> C2H4(3) + CC[CH]CCC(18)  # Reaction 125
+  rate-constant: {A: 9.176248, b: 3.67, Ea: 5.348}
+- equation: C2H3(32) + [CH2]CC(15) <=> C5H10(55)  # Reaction 126
+  rate-constant: {A: 3.18795e+16, b: -1.177, Ea: 0.0}
+- equation: CH2(9) + C2H3(32) <=> C3H5(37)  # Reaction 127
+  rate-constant: {A: 4.172519e+11, b: 0.574, Ea: -0.027}
+- equation: C2H3(32) + [CH2]C[CH2](25) <=> C2H4(3) + C3H5(37)  # Reaction 128
+  rate-constant: {A: 2.42e+12, b: 0.0, Ea: 0.0}
+- equation: C2H3(32) + C3H6(6) <=> C2H4(3) + C3H5(37)  # Reaction 129
+  rate-constant: {A: 6.66e-03, b: 4.34, Ea: 0.1}
+- equation: C2H3(32) + C[CH2](17) <=> C4H8(23)  # Reaction 130
+  rate-constant: {A: 8.08049e+14, b: -0.685, Ea: 0.0}
+- equation: C2H3(32) + [CH2]CCC(16) <=> C2H4(3) + C4H8(23)  # Reaction 131
+  rate-constant: {A: 2.42e+12, b: 0.0, Ea: 0.0}
+- equation: H(12) + C2H2(2) <=> C2H3(32)  # Reaction 132
+  rate-constant: {A: 1.03e+09, b: 1.64, Ea: 2.11}
+- equation: C3H5(37) + C3H5(37) <=> C6H10(112)  # Reaction 133
+  rate-constant: {A: 2.04e+13, b: 0.0, Ea: -0.26}
+- equation: C2H3(32) + CC[CH]CCC(18) <=> C2H2(2) + C6H14(1)  # Reaction 134
+  rate-constant: {A: 2.10638e+13, b: -0.251, Ea: 0.0}
+- equation: C2H3(32) + C[CH]CCCC(20) <=> C2H2(2) + C6H14(1)  # Reaction 135
+  rate-constant: {A: 2.10638e+13, b: -0.251, Ea: 0.0}
+- equation: C2H3(32) + C2H3(32) <=> C2H2(2) + C2H4(3)  # Reaction 136
+  rate-constant: {A: 2.9597e+13, b: -0.312, Ea: 0.0}
+- equation: C2H3(32) + C[CH2](17) <=> C2H2(2) + C2H6(4)  # Reaction 137
+  rate-constant: {A: 2.10638e+13, b: -0.251, Ea: 0.0}
+- equation: C2H3(32) + C[CH]C(36) <=> C2H2(2) + C3H8(5)  # Reaction 138
+  rate-constant: {A: 2.10638e+13, b: -0.251, Ea: 0.0}
+- equation: C2H3(32) + [CH2]CC(15) <=> C2H2(2) + C3H8(5)  # Reaction 139
+  rate-constant: {A: 2.10638e+13, b: -0.251, Ea: 0.0}
+- equation: C2H3(32) + C3H5(37) <=> C2H2(2) + C3H6(6)  # Reaction 140
+  rate-constant: {A: 4.21276e+13, b: -0.251, Ea: 0.0}
+- equation: CH3(8) + C2H3(32) <=> CH4(7) + C2H2(2)  # Reaction 141
+  rate-constant: {A: 1.62e+06, b: 1.87, Ea: 0.0}
+- equation: CH2(9) + C2H3(32) <=> CH3(8) + C2H2(2)  # Reaction 142
+  rate-constant: {A: 2.17902e+10, b: 1.014, Ea: 0.0}
+- equation: H(12) + C2H3(32) <=> H2(11) + C2H2(2)  # Reaction 143
+  rate-constant: {A: 4.8e+08, b: 1.5, Ea: 0.0}
+- equation: C6H10(145) <=> C6H10(112)  # Reaction 144
+  rate-constant: {A: 2.453877e+17, b: -1.28, Ea: -4.941}
+- equation: C2H2(133) <=> C2H2(2)  # Reaction 145
+  rate-constant: {A: 7.988928e+13, b: -0.164, Ea: 8.176}
+- equation: C6H10(157) <=> C2H2(2) + C4H8(23)  # Reaction 146
+  rate-constant: {A: 6.46666e+11, b: 0.0, Ea: 63.968}
+- equation: C6H10(145) <=> C6H10(157)  # Reaction 147
+  rate-constant: {A: 2.104535e+14, b: -0.279, Ea: 9.353}
+- equation: C6H10(176) <=> C6H10(157)  # Reaction 148
+  rate-constant: {A: 2.453877e+17, b: -1.28, Ea: -4.941}
+- equation: C6H10(176) <=> C2H2(133) + C4H8(23)  # Reaction 149
+  rate-constant: {A: 9.69999e+11, b: 0.0, Ea: 48.246}
+- equation: C6H10(175) <=> C6H10(157)  # Reaction 150
+  rate-constant: {A: 1.635918e+17, b: -1.28, Ea: -4.941}
+- equation: C6H10(176) <=> C6H10(182)  # Reaction 151
+  rate-constant: {A: 6.849648e+11, b: 0.413, Ea: 4.117}
+- equation: C6H10(175) <=> C6H10(185)  # Reaction 152
+  rate-constant: {A: 6.849648e+11, b: 0.413, Ea: 4.117}
+- equation: C6H10(185) <=> C6H10(182)  # Reaction 153
+  rate-constant: {A: 9.66e+08, b: 1.162, Ea: 44.283}
+- equation: C6H10(182) <=> C6H10(188)  # Reaction 154
+  rate-constant: {A: 5.790722e+12, b: -0.153, Ea: 37.057}
+- equation: H(12) + C3H5(39) <=> C3H6(6)  # Reaction 155
+  rate-constant: {A: 8.15666e+18, b: -1.493, Ea: 0.0}
+- equation: C[CH2](17) + C3H5(39) <=> C2H4(3) + C3H6(6)  # Reaction 156
+  rate-constant: {A: 4.56e+14, b: -0.7, Ea: 0.0}
+- equation: C3H5(39) + [CH2]CC(15) <=> C3H6(6) + C3H6(6)  # Reaction 157
+  rate-constant: {A: 2.42e+12, b: 0.0, Ea: 0.0}
+- equation: C3H5(39) + C[CH]C(36) <=> C3H6(6) + C3H6(6)  # Reaction 158
+  rate-constant: {A: 3.0e+11, b: 0.0, Ea: 0.0}
+- equation: CH3(8) + C3H6(6) <=> CH4(7) + C3H5(39)  # Reaction 159
+  rate-constant: {A: 0.01716, b: 4.34, Ea: 20.71}
+- equation: H(12) + C3H6(6) <=> H2(11) + C3H5(39)  # Reaction 160
+  rate-constant: {A: 120.0, b: 3.62, Ea: 11.266}
+- equation: C3H5(39) + C6H14(1) <=> C3H6(6) + C[CH]CCCC(20)  # Reaction 161
+  rate-constant: {A: 9.176248, b: 3.67, Ea: 5.348}
+- equation: C[CH2](17) + C3H6(6) <=> C2H6(4) + C3H5(39)  # Reaction 162
+  rate-constant: {A: 316.0, b: 3.13, Ea: 18.0}
+- equation: C[CH2](17) + C3H5(39) <=> C5H10(81)  # Reaction 163
+  rate-constant: {A: 5.95927e+14, b: -0.639, Ea: 0.0}
+- equation: C3H5(39) <=> C3H5(37)  # Reaction 164
+  rate-constant: {A: 1.53e+10, b: 0.97, Ea: 37.7}
+- equation: C3H5(39) + [CH2]C[CH2](25) <=> C3H5(37) + C3H6(6)  # Reaction 165
+  rate-constant: {A: 2.42e+12, b: 0.0, Ea: 0.0}
+- equation: C3H5(37) + C3H6(6) <=> C3H5(39) + C3H6(6)  # Reaction 166
+  rate-constant: {A: 0.0928, b: 4.34, Ea: 29.62}
+- equation: C3H5(39) + [CH2]CCC(16) <=> C3H6(6) + C4H8(23)  # Reaction 167
+  rate-constant: {A: 2.42e+12, b: 0.0, Ea: 0.0}
+- equation: CH3(8) + C3H5(39) <=> C4H8(82)  # Reaction 168
+  rate-constant: {A: 5.95927e+14, b: -0.639, Ea: 0.0}
+- equation: C2H3(32) + C3H6(6) <=> C2H4(3) + C3H5(39)  # Reaction 169
+  rate-constant: {A: 6.874e-04, b: 4.732, Ea: 6.579}
+- equation: C2H3(32) + C3H5(39) <=> C2H2(2) + C3H6(6)  # Reaction 170
+  rate-constant: {A: 2.9597e+13, b: -0.312, Ea: 0.0}
+- equation: CH3(8) + C2H2(2) <=> C3H5(39)  # Reaction 171
+  rate-constant: {A: 1.338e+05, b: 2.41, Ea: 6.77}
+- equation: C3H5(37) + C3H5(39) <=> C6H10(157)  # Reaction 172
+  rate-constant: {A: 1.257308e+14, b: -0.212, Ea: 0.0}
+- equation: C3H5(39) + C3H5(39) <=> C6H10(182)  # Reaction 173
+  rate-constant: {A: 2.979635e+14, b: -0.639, Ea: 0.0}
+- equation: H(12) + [CH2]C[CH]C(26) <=> [CH2]CCC(16)  # Reaction 174
+  rate-constant: {A: 1.76637e+13, b: 0.153, Ea: 0.0}
+- equation: H(12) + [CH2]CCC(16) <=> H2(11) + [CH2]C[CH]C(26)  # Reaction 175
+  rate-constant: {A: 63.825, b: 3.68, Ea: 4.7}
+- equation: C[CH2](17) + [CH2]CCC(16) <=> C2H6(4) + [CH2]C[CH]C(26)  # Reaction 176
+  rate-constant: {A: 2.163867e-03, b: 4.29, Ea: 7.536}
+- equation: C[CH2](17) + [CH2]C[CH]C(26) <=> C[CH]CCCC(20)  # Reaction 177
+  rate-constant: {A: 3.48129e+13, b: -0.158, Ea: 0.0}
+- equation: '[CH2]C[CH]C(26) <=> C4H8(23)'  # Reaction 178
+  duplicate: true
+  rate-constant: {A: 4.488179e+10, b: 0.341, Ea: 5.33}
+- equation: '[CH2]C[CH]C(26) <=> C4H8(23)'  # Reaction 179
+  duplicate: true
+  rate-constant: {A: 1.542667e+09, b: 0.311, Ea: 5.969}
+- equation: '[CH2]C[CH]C(26) <=> C4H8(82)'  # Reaction 180
+  rate-constant: {A: 3.898e+11, b: 0.486, Ea: 5.464}
+- equation: '[CH2]C[CH]C(26) <=> C4H8(23)'  # Reaction 181
+  duplicate: true
+  rate-constant: {A: 4.488179e+10, b: 0.341, Ea: 5.33}
+- equation: '[CH2]C[CH]C(26) <=> C4H8(23)'  # Reaction 182
+  duplicate: true
+  rate-constant: {A: 1.542667e+09, b: 0.311, Ea: 5.969}
+- equation: CH2(9) + C3H6(6) <=> [CH2]C[CH]C(26)  # Reaction 183
+  rate-constant: {A: 1.06e+08, b: 1.58, Ea: -2.0}

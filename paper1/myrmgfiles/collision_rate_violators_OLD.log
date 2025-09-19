@@ -1,0 +1,15 @@
+*** Collision rate limit violators report ***
+"Violation factor" is the ratio of the rate coefficient to the collision limit rate at the relevant conditions
+
+! Template reaction: R_Recombination
+! Flux pairs: C5H5(947), C5H6(931); H(12), C5H6(931); 
+! Matched reaction 134 C5H5 + H <=> C5H6 in R_Recombination/training
+! This reaction matched rate rule [Root_1R->H_N-2R->S_N-2CHNO->H_2CNO-inRing_Ext-2CNO-R_Ext-3R!H-R_Ext-4R!H-R_N-Sp-4R!H-3R!H]
+! family: R_Recombination
+H(12)+C5H5(947)<=>C5H6(931)                         2.500000e+15 0.000     0.000    
+
+Direction: forward
+Violation factor: 1.71
+Violation condition: 1573.0 K, 1.0 bar
+
+

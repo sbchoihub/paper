@@ -1,0 +1,197 @@
+Global RMG Settings:
+   database.directory   = /rmg/RMG-database/input (Default, relative to RMG-Py source code)
+   test_data.directory  = /rmg/RMG-Py/test/rmgpy/test_data (Default, relative to RMG-Py source code)
+RMG execution initiated at Fri Sep 19 02:30:05 2025
+
+#########################################################
+# RMG-Py - Reaction Mechanism Generator in Python       #
+# Version: 3.2.0                                        #
+# Authors: RMG Developers (rmg_dev@mit.edu)             #
+# P.I.s:   William H. Green (whgreen@mit.edu)           #
+#          Richard H. West (r.west@neu.edu)             #
+# Website: http://reactionmechanismgenerator.github.io/ #
+#########################################################
+
+The current git HEAD for RMG-Py is:
+	b'036ab3f8ca0f94f567b50b0b83110bab0a14a35f'
+	b'Wed Aug 16 15:56:48 2023 -0400'
+
+The current git HEAD for RMG-database is:
+	b'b7ff16364a07c9a51a34303aa28407a83455a3e4'
+	b'Tue Aug 8 09:37:08 2023 -0400'
+
+Reading input file "/rmg/RMG-Py/myrmgfiles/hexane/c6h14.py"...
+database(
+    thermoLibraries = ['primaryThermoLibrary',
+                        'SABIC_aromatics',], 
+    reactionLibraries = ['Klippenstein_Glarborg2016',],
+    seedMechanisms = [],
+    kineticsDepositories = ['training'],
+    kineticsFamilies = 'default',
+    kineticsEstimator = 'rate rules',
+)
+
+# List of species
+species(
+        label='C6H14',
+        reactive=True,
+        structure=SMILES("CCCCCC")
+        )
+
+species(
+        label='C2H2',
+        reactive=True,
+        structure=SMILES("C#C")
+        )
+
+species(
+        label='C2H4',
+        reactive=True,
+        structure=SMILES("C=C")
+        )
+
+species(
+        label='C2H6',
+        reactive=True,
+        structure=SMILES("CC")
+        )
+
+species(
+        label='C3H8',
+        reactive=True,
+        structure=SMILES("CCC")
+        )
+
+species(
+        label='C3H6',
+        reactive=True,
+        structure=SMILES("CC=C")
+        )
+
+species(
+        label='CH4',
+        reactive=True,
+        structure=SMILES("C")
+        )
+
+species(
+        label='CH3',
+        reactive=True,
+        structure=SMILES("[CH3]")
+        )
+
+species(
+        label='CH2',
+        reactive=True,
+        structure=SMILES("[CH2]")
+        )
+        
+species(
+        label='C6H6',
+        reactive=True,
+        structure=SMILES("c1ccccc1")
+        )
+
+species(
+        label='H2',
+        reactive=True,
+        structure=SMILES("[H][H]")
+        )
+
+species(
+        label='H',
+        reactive=True,
+        structure=SMILES("[H]")
+        )
+
+species(
+        label='Ar',
+        reactive=False,
+        structure=SMILES("[Ar]")
+        )
+
+# forbidden
+forbidden(
+        label='O2',
+        structure=adjacencyList("""
+            1 O u1 p2 {2,S}
+            2 O u1 p2 {1,S}
+            """),
+)
+
+
+# Reaction systems
+simpleReactor(
+    temperature=(1573,'K'),
+    pressure=(1.0,'bar'),
+    initialMoleFractions={
+        "C6H14": 0.073,
+        "Ar": 0.463,
+        "H2": 0.463,
+    },
+    terminationConversion={
+        'C6H14': 0.9,
+    
+    },
+    terminationTime=(1e6,'s'),
+)
+
+simulator(
+    atol=1e-16,
+    rtol=1e-8,
+)
+
+model(
+    toleranceKeepInEdge=0.0,
+    toleranceMoveToCore=0.1,
+    toleranceInterruptSimulation=0.1,
+    maximumEdgeSpecies=100000,
+    filterReactions=True,
+)
+
+generatedSpeciesConstraints(
+    maximumCarbonAtoms=6,
+)
+
+
+options(
+    units='si',
+    generateOutputHTML=True,
+    generatePlots=False,
+    saveEdgeSpecies=True,
+    saveSimulationProfiles=True,
+    )
+
+Warning: Initial mole fractions do not sum to one; normalizing.
+
+Original composition:
+C6H14 = 0.073
+Ar = 0.463
+H2 = 0.463
+
+Normalized mole fractions:
+C6H14 = 0.07307307307307306
+Ar = 0.46346346346346345
+H2 = 0.46346346346346345
+
+Warning: Generate Output HTML option was turned on. Note that this will slow down model generation.
+Warning: Edge species saving was turned on. This will slow down model generation for large simulations.
+
+Loading transport library from PrimaryTransportLibrary.py in /rmg/RMG-database/input/transport/libraries...
+Loading transport library from NOx2018.py in /rmg/RMG-database/input/transport/libraries...
+Loading transport library from NIST_Fluorine.py in /rmg/RMG-database/input/transport/libraries...
+Loading transport library from GRI-Mech.py in /rmg/RMG-database/input/transport/libraries...
+Loading transport library from OneDMinN2.py in /rmg/RMG-database/input/transport/libraries...
+Loading transport group database from /rmg/RMG-database/input/transport/groups...
+Loading kinetics library Klippenstein_Glarborg2016 from /rmg/RMG-database/input/kinetics/libraries/Klippenstein_Glarborg2016/reactions.py...
+Warning: Only Arrhenius and PDepArrhenius kinetics supported for duplicate reactions.
+Warning: Only Arrhenius and PDepArrhenius kinetics supported for duplicate reactions.
+Loading frequencies group database from /rmg/RMG-database/input/statmech/groups...
+Loading solvation thermodynamics group database from /rmg/RMG-database/input/solvation/groups...
+Loading thermodynamics library from primaryThermoLibrary.py in /rmg/RMG-database/input/thermo/libraries...
+Loading thermodynamics library from SABIC_aromatics.py in /rmg/RMG-database/input/thermo/libraries...
+Loading thermodynamics group database from /rmg/RMG-database/input/thermo/groups...
+Adding O2 to the forbidden structures database...
+Adding rate rules from training set in kinetics families...
+Filling in rate rules in kinetics families by averaging...
+Adding reaction library Klippenstein_Glarborg2016 to model edge...
